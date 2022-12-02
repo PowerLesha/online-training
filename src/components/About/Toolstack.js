@@ -1,30 +1,31 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiLinux,
-  SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiVercel,
-} from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <Row />{" "}
+        <p className="font">
+          I have been working as a trainer for more than 10 years.{" "}
+        </p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <Row />{" "}
+        <p className="font">
+          Prepared lots of National and International medalists
+        </p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <Row />{" "}
+        <p className="font">Helped lots of people recovered after injures.</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+      <Col xs={1} md={8} className="tech-icons">
+        <Row />{" "}
+        <p className="font">
+          Helped people with different goals like losing weight, increasing
+          mobility, increasing muscle mass, etc.
+        </p>
       </Col>
     </Row>
   );

@@ -2,20 +2,35 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { BsMessenger } from "react-icons/bs";
 
+import s from "../../App.css";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img
+        className="powerlogos"
+        variant="top"
+        src={props.imgPath}
+        alt="card-img"
+      />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title style={s.card}>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+        <Button variant="primary" href={props.emailLink} target="_blank">
+          <BsMessenger /> &nbsp;
+          {props.isInsta ? "Write me on my Email" : "Write me on my instagramm"}
+        </Button>
+        <Button
+          className="buttoncard"
+          variant="primary"
+          href={props.instaLink}
+          target="_blank"
+        >
+          <BsMessenger /> &nbsp;
+          {props.isInsta ? "Write me on my instagramm" : ""}
         </Button>
         {"\n"}
         {"\n"}
@@ -25,12 +40,12 @@ function ProjectCards(props) {
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.instaLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {"Write me on my Email"}
           </Button>
         )}
       </Card.Body>

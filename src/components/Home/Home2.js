@@ -1,14 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import homeLogo from "../../Assets/homeLogo.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-
+import { AiFillGithub, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import s from "../../App.css";
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -16,88 +11,53 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              <span className="purple"> LET ME INTRODUCE MYSELF </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I have been doing powerlifting more than 10 years already.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Python. </b>
-              </i>
+              <br />I work as a professional trainer as well. And I can help you
+              increase your results either in powerlifting or bench press. Also
+              I can help you achieve your fitness goals.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              So, if you want to be at higher level than you are, you should
+              work with me.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvtar" style={s.myAvtar}>
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                width={800}
+                height={800}
+                src={homeLogo}
+                className="img-fluid"
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>FIND ME ON:</h1>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
+                <p>Youtube</p>
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://www.youtube.com/watch?v=NifSHbREoWk"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <AiFillYoutube />
                 </a>
               </li>
+
               <li className="social-icons">
+                <p>Instagramm</p>
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/powerlifter_titov/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
