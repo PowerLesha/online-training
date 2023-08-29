@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 align="center">
   Portfolio Website - v1.0<br/>
   <a href="https://powerlesha.github.io/online-training/" target="_blank">Titov Oleksii</a>
@@ -25,3 +26,6 @@ This project was built using these technologies.
 - Node.js
 - CSS3
 - VsCode
+=======
+This is my website
+>>>>>>> 37edeca3a512793dbd6d79845bcf82c31ebeb8e6
