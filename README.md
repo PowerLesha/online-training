@@ -4,7 +4,7 @@
   <a href="https://powerlesha.github.io/online-training/" target="_blank">Titov Oleksii</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Assets/face.jpg" />
+  <img alt="Demo" src="./src/Assets/face.jpg" />
 </div>
 
 <br/>
