@@ -41,7 +41,12 @@ function Projects() {
                   is 10$"
                 </p>
               }
-              description="You can ask me all what you want in terms of powerlifting, diet, recovery and that kind of things."
+              description={
+                <p style={{ paddingTop: "22px" }}>
+                  "You can ask me all what you want in terms of powerlifting,
+                  diet, recovery and that kind of things."
+                </p>
+              }
               emailLink="mailto:leshapowerlifter@gmail.com"
               instaLink="https://www.instagram.com/powerlifter_titov/"
             />
@@ -55,7 +60,11 @@ function Projects() {
                   "Training plan for 1 month. It costs 20$."
                 </p>
               }
-              description="I send you monthly training plan as an excel document."
+              description={
+                <p style={{ paddingTop: "22px" }}>
+                  "I send you monthly training plan as an excel document."
+                </p>
+              }
               emailLink="mailto:leshapowerlifter@gmail.com"
               instaLink="https://www.instagram.com/powerlifter_titov/"
             />

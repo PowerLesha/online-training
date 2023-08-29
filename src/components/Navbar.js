@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import sbd from "../Assets/SBD.png";
 import onlinetraining from "../Assets/Online training for you (1).png";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
@@ -31,7 +30,10 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand
+          href="https://powerlesha.github.io/online-training/#/"
+          className="d-flex"
+        >
           <img src={onlinetraining} className="do-flex" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -40,6 +42,7 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
+          <span></span>
           <span></span>
           <span></span>
           <span></span>
@@ -74,9 +77,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                // href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/MyBlog"
+                onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> My blog
               </Nav.Link>

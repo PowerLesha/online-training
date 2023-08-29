@@ -7,7 +7,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="12" className="footer-copywright">
+        <Col md={12} className="footer-copywright">
           <h3>
             <b style={{ color: "brown" }}>
               Designed and Developed by Titov Oleksii{" "}

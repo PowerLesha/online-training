@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homeLogo.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import s from "../../App.css";
 function Home2() {
   return (
@@ -43,7 +43,7 @@ function Home2() {
 
             <ul className="home-about-social-links">
               <li className="social-icons">
-                <p>Youtube</p>
+                <p>YouTube</p>
                 <a
                   href="https://www.youtube.com/watch?v=NifSHbREoWk"
                   target="_blank"
@@ -55,7 +55,7 @@ function Home2() {
               </li>
 
               <li className="social-icons">
-                <p>Instagramm</p>
+                <p>Instagram</p>
                 <a
                   href="https://www.instagram.com/powerlifter_titov/"
                   target="_blank"

@@ -1,24 +1,16 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import achievements from "../../Assets/achievements.jpg";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={0} md={0} className="tech-icons">
         <Row />
-        <p className="font">Multiple National champion.</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <Row />{" "}
         <p className="font">
-          National record holder in squat, deadlift and total.
+          <li>Multiple National champion.</li>
+          <li>National record holder in squat, deadlift and total.</li>
+          <li>IPF World club cup champion (Iran) .</li>
+          <li>IPF World, European medalist.</li>
         </p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <Row /> <p className="font">IPF World club cup champion. (Iran)</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <Row /> <p className="font">IPF World, European medalist.</p>
       </Col>
     </Row>
   );

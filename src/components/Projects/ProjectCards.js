@@ -19,9 +19,16 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.emailLink} target="_blank">
+        <Button
+          className="buttoncard"
+          variant="primary"
+          href={props.emailLink}
+          target="_blank"
+        >
           <BsMessenger /> &nbsp;
-          {props.isInsta ? "Write me on my Email" : "Write me on my instagramm"}
+          {props.isInsta
+            ? "Write me on my e-mail"
+            : "Write me on my instagramm"}
         </Button>
         <Button
           className="buttoncard"
@@ -30,7 +37,7 @@ function ProjectCards(props) {
           target="_blank"
         >
           <BsMessenger /> &nbsp;
-          {props.isInsta ? "Write me on my instagramm" : ""}
+          {props.isInsta ? "Write me on my Instagram" : ""}
         </Button>
         {"\n"}
         {"\n"}
@@ -39,10 +46,10 @@ function ProjectCards(props) {
 
         {!props.isBlog && props.demoLink && (
           <Button
+            className="buttoncard"
             variant="primary"
             href={props.instaLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
             {"Write me on my Email"}
