@@ -22,7 +22,7 @@ function Projects() {
               title={
                 <p style={{ padding: "0.45em" }} className="card">
                   "Online training in powerlifting/bench-press. Monthly costs
-                  50$."
+                  100$."
                 </p>
               }
               description="I send you a training plan and a diet every week. You should make a video your main sets and give me feedback. You can keep in touch with me every day around the clock."
@@ -38,7 +38,7 @@ function Projects() {
               title={
                 <p style={{ padding: "0.45em" }} className="card">
                   "1 hour online consultation, or 1 online training. The price
-                  is 10$"
+                  is 20$"
                 </p>
               }
               description={
@@ -57,7 +57,7 @@ function Projects() {
               isInsta={true}
               title={
                 <p style={{ padding: "0.45em" }} className="card">
-                  "Training plan for 1 month. It costs 20$."
+                  "Training plan for 1 month. It costs 50$."
                 </p>
               }
               description={
