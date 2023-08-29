@@ -12,7 +12,6 @@ function Footer() {
             <b style={{ color: "brown" }}>
               Designed and Developed by Titov Oleksii{" "}
             </b>
-
             <b style={{ color: "maroon", font: "small-caption" }}>{year} </b>
           </h3>
         </Col>

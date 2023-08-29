@@ -37,7 +37,6 @@ function App() {
           <Route path="/MyBlog" element={<MyBlog />} />
         </Routes>
         <Footer />
-        ``
       </div>
     </HashRouter>
   );
