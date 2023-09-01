@@ -11,7 +11,7 @@ function MyBlog() {
           md={8}
           style={{
             justifyContent: "center",
-            paddingTop: "250px",
+            paddingTop: "310px",
             paddingBottom: "200px",
             color: "white",
             fontSize: "18px",
