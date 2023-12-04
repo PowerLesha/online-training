@@ -20,7 +20,7 @@ function Projects() {
               imgPath={quote}
               isInsta={true}
               title={
-                <p style={{ padding: "0.45em" }} className="card">
+                <p style={{ padding: "1em" }} className="card">
                   "Online training in powerlifting/bench-press. Monthly costs
                   100$."
                 </p>
@@ -36,13 +36,13 @@ function Projects() {
               imgPath={quote2}
               isInsta={true}
               title={
-                <p style={{ padding: "0.45em" }} className="card">
+                <p style={{ padding: "1em" }} className="card">
                   "1 hour online consultation, or 1 online training. The price
                   is 20$"
                 </p>
               }
               description={
-                <p style={{ paddingTop: "22px" }}>
+                <p style={{ paddingBottom: "50px" }}>
                   "You can ask me all what you want in terms of powerlifting,
                   diet, recovery and that kind of things."
                 </p>
@@ -56,12 +56,12 @@ function Projects() {
               imgPath={quote3}
               isInsta={true}
               title={
-                <p style={{ padding: "0.45em" }} className="card">
+                <p style={{ padding: "1.3em" }} className="card">
                   "Training plan for 1 month. It costs 50$."
                 </p>
               }
               description={
-                <p style={{ paddingTop: "22px" }}>
+                <p style={{ paddingBottom: "75px" }}>
                   "I send you monthly training plan as an excel document."
                 </p>
               }

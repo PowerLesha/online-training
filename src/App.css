@@ -59,13 +59,16 @@
 .card {
   color: rgb(113, 102, 113);
 }
+.card p {
+  height: 120px;
+}
 
 .powerlogos {
   width: min-content;
   height: 15em;
 }
 .buttoncard {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .project {
