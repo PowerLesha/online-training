@@ -12,6 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@media (max-width: 767px) {
+  .img-fluid {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+}
 
 .App-header {
   background-color: #c6071a;
@@ -73,4 +79,7 @@
 
 .project {
   vertical-align: middle;
+}
+blockquote > :last-child {
+  margin-top: -60px;
 }

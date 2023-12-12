@@ -15,7 +15,7 @@ function AboutCard() {
             <br />
           </p>
 
-          <p style={{ color: "brown" }}>
+          <p style={{ color: "brown", marginTop: "50px" }}>
             “You can become strong, and powerful, and beautiful.”{" "}
           </p>
           <footer className="blockquote-footer"> Author Unknown</footer>

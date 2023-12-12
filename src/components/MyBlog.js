@@ -23,7 +23,7 @@ function MyBlog() {
               paddingBottom: "20px",
             }}
           >
-            Unfortunately there aren't any articles at the moment. But i promise
+            Unfortunately there aren't any articles at the moment. But I promise
             you, I will write something as soon as possible!
           </b>
         </Col>

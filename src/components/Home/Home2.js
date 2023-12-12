@@ -25,16 +25,8 @@ function Home2() {
               work with me.
             </p>
           </Col>
-          <Col md={4} className="myAvtar" style={s.myAvtar}>
-            <Tilt>
-              <img
-                width={800}
-                height={800}
-                src={homeLogo}
-                className="img-fluid"
-                alt="avatar"
-              />
-            </Tilt>
+          <Col md={4} className="myAvtar">
+            <img src={homeLogo} className="img-fluid" alt="avatar" />
           </Col>
         </Row>
         <Row>

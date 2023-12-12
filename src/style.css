@@ -338,7 +338,8 @@ button:focus {
 
 .home-about-social {
   text-align: center !important;
-  padding-top: 25px;
+  margin-bottom: -20px;
+  padding-top: 45px;
   color: white !important;
 }
 
