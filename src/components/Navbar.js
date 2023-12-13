@@ -5,7 +5,12 @@ import Container from "react-bootstrap/Container";
 import onlinetraining from "../Assets/Online training for you (1).png";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import {
+  AiOutlineFileText,
+  AiOutlineFolderOpen,
+  AiOutlineHome,
+  AiOutlineUser,
+} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -75,6 +80,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/programms"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFolderOpen style={{ marginBottom: "2px" }} />{" "}
+                Programms
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}

@@ -11,6 +11,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyBlog from "./components/MyBlog";
+import Programms from "./components/Programms/Programms";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -18,7 +19,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,6 +36,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
           <Route path="/MyBlog" element={<MyBlog />} />
+          <Route path="/programms" element={<Programms />} />
         </Routes>
         <Footer />
       </div>
