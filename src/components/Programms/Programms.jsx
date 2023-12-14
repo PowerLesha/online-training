@@ -1,81 +1,69 @@
-// Programms.jsx
-
-import React from "react";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import style from "./Programms.module.css";
+import FreeProgramms from "./FreeProgramms";
 
 function Programms() {
+  const [selectedOption, setSelectedOption] = useState("option1");
+
+  const handleOptionChange = (value) => {
+    setSelectedOption(value);
+  };
+
   return (
     <Container fluid className="MyBlog">
       <Particle />
       <Row
-        md={3}
+        md={1}
         style={{
           justifyContent: "center",
-
           marginTop: "200px",
         }}
       >
-        <Carousel interval={null} className={style.carousel}>
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the first slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>First slide label</h3>
-              <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the first slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>First slide label</h3>
-              <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the second slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          {/* Add more Carousel.Items for additional slides */}
-        </Carousel>
-        <Carousel interval={null} className={style.carousel}>
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the first slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>First slide label</h3>
-              <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the first slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>First slide label</h3>
-              <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item className={style.carouselItem}>
-            {/* Content for the second slide */}
-
-            <Carousel.Caption className={style.carouselCaption}>
-              <h3 style={{ marginBottom: "260px" }}>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          {/* Add more Carousel.Items for additional slides */}
-        </Carousel>
+        <div className={style.wrapper}>
+          <div className={style.option}>
+            <input
+              value="option1"
+              name="btn"
+              type="radio"
+              className={style.input}
+              checked={selectedOption === "option1"}
+              onChange={() => handleOptionChange("option1")}
+            />
+            <div className={style.btn}>
+              <span className={style.span}>Free programms</span>
+            </div>
+          </div>
+          <div className={style.option}>
+            <input
+              value="option2"
+              name="btn"
+              type="radio"
+              className={style.input}
+              checked={selectedOption === "option2"}
+              onChange={() => handleOptionChange("option2")}
+            />
+            <div className={style.btn}>
+              <span className={style.span}>Powerlifting programms</span>
+            </div>{" "}
+          </div>
+          <div className={style.option}>
+            <input
+              value="option3"
+              name="btn"
+              type="radio"
+              className={style.input}
+              checked={selectedOption === "option3"}
+              onChange={() => handleOptionChange("option3")}
+            />
+            <div className={style.btn}>
+              <span className={style.span}>Powerbuilding programms</span>
+            </div>
+          </div>
+        </div>
       </Row>
+      {selectedOption === "option1" && <FreeProgramms />}
     </Container>
   );
 }
