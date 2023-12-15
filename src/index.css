@@ -7,3 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(105, 13, 13), rgb(17, 15, 15));
 }
+#languageSelect:hover {
+  background-color: black;
+}

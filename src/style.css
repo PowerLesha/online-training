@@ -75,6 +75,10 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+
+.languageSelect:hover {
+  background-color: black;
+}
 .sticky {
   background-color: #1d1010a9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -744,4 +748,7 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+select option:hover {
+  background-color: black;
 }

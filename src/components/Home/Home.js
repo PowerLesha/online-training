@@ -6,8 +6,8 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import { useTranslation } from "react-i18next";
 
-function Home({ changeLanguage }) {
-  const { t, i18n } = useTranslation();
+function Home() {
+  const { t } = useTranslation();
 
   return (
     <section>
@@ -45,14 +45,7 @@ function Home({ changeLanguage }) {
           </Row>
         </Container>
       </Container>
-      <button type="button" onClick={() => changeLanguage("ukr")}>
-        {" "}
-        Change language to ukr
-      </button>
-      <button type="button" onClick={() => changeLanguage("en")}>
-        {" "}
-        Change language to en
-      </button>
+
       <Home2 />
     </section>
   );

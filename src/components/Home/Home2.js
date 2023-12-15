@@ -3,26 +3,29 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homeLogo.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 import s from "../../App.css";
+
 function Home2() {
+  const { t, i18n } = useTranslation();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> LET ME INTRODUCE MYSELF </span>
+              <span className="purple"> {t("home2.introduce")} </span>
             </h1>
             <p className="home-about-body">
-              I have been doing powerlifting more than 10 years already.
-              <br />
-              <br />I work as a professional trainer as well. And I can help you
-              increase your results either in powerlifting or bench press. Also
-              I can help you achieve your fitness goals.
+              {t("home2.powerlifting")}
               <br />
               <br />
-              So, if you want to be at higher level than you are, you should
-              work with me.
+              {t("home2.trainer")}
+              <br />
+              <br />
+              {t("home2.achievements")}
+              <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -31,7 +34,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON:</h1>
+            <h1>{t("home2.findMeOn")}</h1>
 
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -64,4 +67,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
