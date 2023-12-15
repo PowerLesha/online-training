@@ -19,6 +19,7 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+
         <Button
           className="buttoncard"
           variant="primary"

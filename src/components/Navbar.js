@@ -12,6 +12,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { t } from "i18next";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -56,7 +57,8 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.home")}
               </Nav.Link>
             </Nav.Item>
 
