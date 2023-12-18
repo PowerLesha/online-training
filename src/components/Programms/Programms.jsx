@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import style from "./Programms.module.css";
-import FreeProgramms from "./FreeProgramms";
+import FreePrograms from "./FreeProgramms";
+import { useTranslation } from "react-i18next";
 
-function Programms() {
+function Programs() {
   const [selectedOption, setSelectedOption] = useState("option1");
+  const { t } = useTranslation();
 
   const handleOptionChange = (value) => {
     setSelectedOption(value);
@@ -32,7 +34,7 @@ function Programms() {
               onChange={() => handleOptionChange("option1")}
             />
             <div className={style.btn}>
-              <span className={style.span}>Free programms</span>
+              <span className={style.span}>{t("programs.freePrograms")}</span>
             </div>
           </div>
           <div className={style.option}>
@@ -45,7 +47,9 @@ function Programms() {
               onChange={() => handleOptionChange("option2")}
             />
             <div className={style.btn}>
-              <span className={style.span}>Powerlifting programms</span>
+              <span className={style.span}>
+                {t("programs.powerliftingPrograms")}
+              </span>
             </div>{" "}
           </div>
           <div className={style.option}>
@@ -58,14 +62,17 @@ function Programms() {
               onChange={() => handleOptionChange("option3")}
             />
             <div className={style.btn}>
-              <span className={style.span}>Powerbuilding programms</span>
+              <span className={style.span}>
+                {t("programs.powerbuildingPrograms")}
+              </span>
             </div>
           </div>
         </div>
       </Row>
-      {selectedOption === "option1" && <FreeProgramms />}
+      {selectedOption === "option1" && <FreePrograms />}
+      {/* Add components for other options as needed */}
     </Container>
   );
 }
 
-export default Programms;
+export default Programs;

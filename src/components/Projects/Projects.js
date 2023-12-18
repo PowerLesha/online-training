@@ -5,15 +5,19 @@ import Particle from "../Particle";
 import quote from "../../Assets/make.png";
 import quote2 from "../../Assets/your.png";
 import quote3 from "../../Assets/choice.png";
+import { useTranslation } from "react-i18next";
+
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          <strong className="purple">Available packages: </strong>
+          <strong className="purple">{t("projects.availablePackages")} </strong>
         </h1>
-        <p style={{ color: "white" }}>Chose the best package for you.</p>
+        <p style={{ color: "white" }}>{t("projects.chooseBestPackage")}</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4}>
             <ProjectCard
@@ -21,11 +25,10 @@ function Projects() {
               isInsta={true}
               title={
                 <p style={{ padding: "1em" }} className="card">
-                  "Online training in powerlifting/bench-press. Monthly costs
-                  100$."
+                  {t("projects.onlineTraining")}
                 </p>
               }
-              description="I send you a training plan and a diet every week. You should make a video your main sets and give me feedback. You can keep in touch with me every day around the clock."
+              description={t("projects.onlineTrainingDescription")}
               emailLink="mailto:leshapowerlifter@gmail.com"
               instaLink="https://www.instagram.com/powerlifter_titov/"
             />
@@ -37,16 +40,10 @@ function Projects() {
               isInsta={true}
               title={
                 <p style={{ padding: "1em" }} className="card">
-                  "1 hour online consultation, or 1 online training. The price
-                  is 20$"
+                  {t("projects.onlineConsultation")}
                 </p>
               }
-              description={
-                <p style={{ paddingBottom: "50px" }}>
-                  "You can ask me all what you want in terms of powerlifting,
-                  diet, recovery and that kind of things."
-                </p>
-              }
+              description={t("projects.onlineConsultationDescription")}
               emailLink="mailto:leshapowerlifter@gmail.com"
               instaLink="https://www.instagram.com/powerlifter_titov/"
             />
@@ -57,14 +54,10 @@ function Projects() {
               isInsta={true}
               title={
                 <p style={{ padding: "1.3em" }} className="card">
-                  "Training plan for 1 month. It costs 50$."
+                  {t("projects.trainingPlan")}
                 </p>
               }
-              description={
-                <p style={{ paddingBottom: "75px" }}>
-                  "I send you monthly training plan as an excel document."
-                </p>
-              }
+              description={t("projects.trainingPlanDescription")}
               emailLink="mailto:leshapowerlifter@gmail.com"
               instaLink="https://www.instagram.com/powerlifter_titov/"
             />

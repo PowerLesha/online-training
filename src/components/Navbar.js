@@ -136,6 +136,12 @@ function NavBar({ changeLanguage }) {
               <option value="ukr" className="languageSelect">
                 Українська
               </option>
+              <option value="ru" className="languageSelect">
+                Русский
+              </option>
+              <option value="bg" className="languageSelect">
+                Български
+              </option>
             </select>
           </div>
         </Navbar.Collapse>

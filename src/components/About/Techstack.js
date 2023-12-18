@@ -1,15 +1,19 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+
 function Techstack() {
+  const { t } = useTranslation();
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={0} md={0} className="tech-icons">
         <Row />
         <p className="font">
-          <li>Multiple National champion.</li>
-          <li>National record holder in squat, deadlift and total.</li>
-          <li>IPF World club cup champion (Iran) .</li>
-          <li>IPF World, European medalist.</li>
+          <li>{t("techstack.champion")}</li>
+          <li>{t("techstack.recordHolder")}</li>
+          <li>{t("techstack.clubCupChampion")}</li>
+          <li>{t("techstack.worldEuropeanMedalist")}</li>
         </p>
       </Col>
     </Row>

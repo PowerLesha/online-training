@@ -1,8 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "./Particle";
+import { useTranslation } from "react-i18next";
 
 function MyBlog() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="MyBlog">
       <Particle />
@@ -23,8 +26,7 @@ function MyBlog() {
               paddingBottom: "20px",
             }}
           >
-            Unfortunately there aren't any articles at the moment. But I promise
-            you, I will write something as soon as possible!
+            {t("myBlog.noArticles")}
           </b>
         </Col>
       </Row>

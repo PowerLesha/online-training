@@ -4,6 +4,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import translationEN from "./components/locales/en/translation.json";
 import translationUKR from "./components/locales/ukr/translation.json";
+import translationRU from "./components/locales/ru/translation.json";
+import translationBG from "./components/locales/bg/translation.json";
 
 const resources = {
   en: {
@@ -11,6 +13,12 @@ const resources = {
   },
   ukr: {
     translation: translationUKR,
+  },
+  ru: {
+    translation: translationRU,
+  },
+  bg: {
+    translation: translationBG,
   },
 };
 i18n

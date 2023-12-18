@@ -3,9 +3,13 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsMessenger } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 import s from "../../App.css";
+
 function ProjectCards(props) {
+  const { t } = useTranslation();
+
   return (
     <Card className="project-card-view">
       <Card.Img
@@ -28,8 +32,8 @@ function ProjectCards(props) {
         >
           <BsMessenger /> &nbsp;
           {props.isInsta
-            ? "Write me on my e-mail"
-            : "Write me on my instagramm"}
+            ? t("projectCards.writeEmail")
+            : t("projectCards.writeInstagram")}
         </Button>
         <Button
           className="buttoncard"
@@ -38,12 +42,10 @@ function ProjectCards(props) {
           target="_blank"
         >
           <BsMessenger /> &nbsp;
-          {props.isInsta ? "Write me on my Instagram" : ""}
+          {props.isInsta ? t("projectCards.writeInstagram") : ""}
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {!props.isBlog && props.demoLink && (
           <Button
@@ -53,11 +55,12 @@ function ProjectCards(props) {
             target="_blank"
           >
             <CgWebsite /> &nbsp;
-            {"Write me on my Email"}
+            {t("projectCards.writeEmail")}
           </Button>
         )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

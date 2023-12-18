@@ -1,14 +1,85 @@
 {
-  "navbar.home": "Home",
-  "navbar.about": "About",
-  "navbar.services": "Services",
-  "navbar.programs": "Programs",
-  "navbar.blog": "My Blog",
-  "hi": "Hi There!",
-  "home2.introduce": "LET ME INTRODUCE MYSELF",
-  "home2.powerlifting": "I have been doing powerlifting more than 10 years already.",
-  "home2.trainer": "I work as a professional trainer as well. And I can help you increase your results either in powerlifting or bench press. Also, I can help you achieve your fitness goals.",
-  "home2.achievements": "So, if you want to be at a higher level than you are, you should work with me.",
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "programs": "Programs",
+    "blog": "My Blog",
+    "hi": "Hi There!",
+    "I": "I'M",
+    "name": "Titov Oleksii"
+  },
+  "home2": {
+    "introduce": "LET ME INTRODUCE MYSELF",
+    "powerlifting": "I have been doing powerlifting for more than 10 years already.",
+    "trainer": "I work as a professional trainer as well. And I can help you increase your results either in powerlifting or bench press. Also, I can help you achieve your fitness goals.",
+    "achievements": "So, if you want to be at a higher level than you are, you should work with me.",
+    "findMeOn": "FIND ME ON:"
+  },
+  "type": {
+    "professionalTrainer": "Professional trainer",
+    "ipfProfessionalSportsman": "IPF professional sportsman",
+    "ipfWorldMedalist": "IPF World medalist",
+    "multipleNationalChampion": "Multiple National champion and record holder"
+  },
 
-  "home2.findMeOn": "FIND ME ON:"
+  "about": {
+    "intro": "Know Who",
+    "whoAmI": " I'M",
+    "sportsAchievements": "Sports Achievements",
+    "coachAchievements": "Achievements as a Coach"
+  },
+  "aboutCard": {
+    "greeting": "Hi Everyone! My name is",
+    "name": " Lesha ",
+    "from": "and I'm from",
+    "country": " Ukraine",
+    "professions": "I am both a professional trainer and a professional sportsman in powerlifting.",
+    "quote": "“You can become strong, and powerful, and beautiful.”",
+    "quoteAuthor": "Author Unknown"
+  },
+  "techstack": {
+    "champion": "Multiple National champion.",
+    "recordHolder": "National record holder in squat, deadlift and total.",
+    "clubCupChampion": "IPF World club cup champion (Iran).",
+    "worldEuropeanMedalist": "IPF World, European medalist."
+  },
+  "toolstack": {
+    "trainerExperience": "I have been working as a trainer for more than 10 years.",
+    "medalistsPreparation": "Prepared lots of National and International medalists.",
+    "injuryRecovery": "Helped lots of people recover after injuries.",
+    "diverseGoals": "Helped people with different goals like losing weight, increasing mobility, increasing muscle mass, etc."
+  },
+  "projectCards": {
+    "writeEmail": "Write me on my e-mail",
+    "writeInstagram": "Write me on my Instagram"
+  },
+  "projects": {
+    "availablePackages": "Available packages:",
+    "chooseBestPackage": "Chose the best package for you.",
+    "onlineTraining": "\"Online training in powerlifting/bench-press. Monthly costs 100$.\"",
+    "onlineTrainingDescription": "I send you a training plan and a diet every week. You should make a video your main sets and give me feedback. You can keep in touch with me every day around the clock.",
+    "onlineConsultation": "\"1 hour online consultation, or 1 online training. The price is 20$\"",
+    "onlineConsultationDescription": "\"You can ask me all what you want in terms of powerlifting, diet, recovery and that kind of things.\"",
+    "trainingPlan": "\"Training plan for 1 month. It costs 50$.\"",
+    "trainingPlanDescription": "\"I send you monthly training plan as an excel document.\""
+  },
+  "freePrograms": {
+    "powerliftingProgram": "Free powerlifting program",
+    "sixWeeksProgram": "6 weeks powerlifting program",
+    "programDescription": "This program is good for both beginners and medium-level athletes.",
+    "benchPressProgram": "Free bench-press program",
+    "placeholderText": "Nulla vitae elit, a pharetra augue mollis interdum."
+  },
+  "programs": {
+    "freePrograms": "Free Programs",
+    "powerliftingPrograms": "Powerlifting Programs",
+    "powerbuildingPrograms": "Powerbuilding Programs"
+  },
+  "myBlog": {
+    "noArticles": "Unfortunately, there aren't any articles at the moment. But I promise you, I will write something as soon as possible!"
+  },
+  "footer": {
+    "designedBy": "Designed and Developed by Titov Oleksii"
+  }
 }

@@ -1,15 +1,18 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
 
 function Type() {
+  const { t } = useTranslation();
+
   return (
     <Typewriter
       options={{
         strings: [
-          "Professional trainer",
-          "IPF professional sportsman",
-          "IPF World medalist",
-          "Multiple National champion and record holder",
+          t("type.professionalTrainer"),
+          t("type.ipfProfessionalSportsman"),
+          t("type.ipfWorldMedalist"),
+          t("type.multipleNationalChampion"),
         ],
         autoStart: true,
         loop: true,

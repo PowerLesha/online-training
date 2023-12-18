@@ -1,7 +1,11 @@
 import React from "react";
 import { Carousel, Row } from "react-bootstrap";
 import style from "./Programms.module.css";
-function FreProgramms() {
+import { useTranslation } from "react-i18next";
+
+function FreePrograms() {
+  const { t } = useTranslation();
+
   return (
     <Row
       md={3}
@@ -14,39 +18,34 @@ function FreProgramms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "100px" }}>
-              Free powerlifting <br /> programm{" "}
+            <h3 style={{ marginBottom: "90px" }}>
+              {t("freePrograms.powerliftingProgram")}
             </h3>
-            <h4 style={{ paddingBottom: "90px" }}>
-              6 weeks powerlifting programm
+            <h4 style={{ paddingBottom: "60px" }}>
+              {t("freePrograms.sixWeeksProgram")}
             </h4>
-            <p>
-              This programm is good for as well for beginners as medium level
-              athletes.
-            </p>
+            <p>{t("freePrograms.programDescription")}</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the first slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "260px" }}>
-              {" "}
-              Free powerlifting <br /> programm{" "}
-            </h3>
-            <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "260px" }}>
-              {" "}
-              Free powerlifting <br /> programm{" "}
+            <h3 style={{ marginBottom: "240px" }}>
+              {t("freePrograms.powerliftingProgram")}
             </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>{t("freePrograms.placeholderText")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item className={style.carouselItem}>
+          {/* Content for the third slide */}
+
+          <Carousel.Caption className={style.carouselCaption}>
+            <h3 style={{ marginBottom: "240px" }}>
+              {t("freePrograms.powerliftingProgram")}
+            </h3>
+            <p>{t("freePrograms.placeholderText")}</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -57,28 +56,31 @@ function FreProgramms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "260px" }}>Free bench-press programm</h3>
-            <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
+            <h3 style={{ marginBottom: "240px" }}>
+              {t("freePrograms.benchPressProgram")}
+            </h3>
+            <p>{t("freePrograms.placeholderText")}</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the first slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "260px" }}>Free bench-press programm</h3>
-            <p>Nulla vitae elit, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "260px" }}>
-              {" "}
-              Free bench-press programm
+            <h3 style={{ marginBottom: "240px" }}>
+              {t("freePrograms.benchPressProgram")}
             </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>{t("freePrograms.placeholderText")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item className={style.carouselItem}>
+          {/* Content for the third slide */}
+
+          <Carousel.Caption className={style.carouselCaption}>
+            <h3 style={{ marginBottom: "240px" }}>
+              {t("freePrograms.benchPressProgram")}
+            </h3>
+            <p>{t("freePrograms.placeholderText")}</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -88,4 +90,4 @@ function FreProgramms() {
   );
 }
 
-export default FreProgramms;
+export default FreePrograms;
