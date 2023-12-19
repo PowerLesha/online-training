@@ -74,7 +74,8 @@
   "programs": {
     "freePrograms": "Free Programs",
     "powerliftingPrograms": "Powerlifting Programs",
-    "powerbuildingPrograms": "Powerbuilding Programs"
+    "powerbuildingPrograms": "Powerbuilding Programs",
+    "supportText": "If these programs are useful to you, you can support me by clicking on this button."
   },
   "myBlog": {
     "noArticles": "Unfortunately, there aren't any articles at the moment. But I promise you, I will write something as soon as possible!"

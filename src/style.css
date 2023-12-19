@@ -752,3 +752,6 @@ button:focus {
 select option:hover {
   background-color: black;
 }
+.languageSelect {
+  cursor: pointer;
+}

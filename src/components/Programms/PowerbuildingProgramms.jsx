@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Carousel, Row } from "react-bootstrap";
+import { Carousel, Row } from "react-bootstrap";
 import style from "./Programms.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -18,10 +18,10 @@ function FreePrograms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "80px", marginTop: "-50px" }}>
+            <h3 style={{ marginBottom: "90px" }}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <h4 style={{ marginBottom: "60px", marginTop: "-10px" }}>
+            <h4 style={{ paddingBottom: "60px" }}>
               {t("freePrograms.sixWeeksProgram")}
             </h4>
             <p>{t("freePrograms.programDescription")}</p>
@@ -31,13 +31,10 @@ function FreePrograms() {
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "80px", marginTop: "-50px" }}>
+            <h3 style={{ marginBottom: "240px" }}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <h4 style={{ marginBottom: "60px", marginTop: "-10px" }}>
-              {t("freePrograms.sixWeeksProgram")}
-            </h4>
-            <p>{t("freePrograms.programDescription")}</p>
+            <p>{t("freePrograms.placeholderText")}</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -45,13 +42,10 @@ function FreePrograms() {
           {/* Content for the third slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "80px", marginTop: "-50px" }}>
+            <h3 style={{ marginBottom: "240px" }}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <h4 style={{ marginBottom: "60px", marginTop: "-10px" }}>
-              {t("freePrograms.sixWeeksProgram")}
-            </h4>
-            <p>{t("freePrograms.programDescription")}</p>
+            <p>{t("freePrograms.placeholderText")}</p>
           </Carousel.Caption>
         </Carousel.Item>
 

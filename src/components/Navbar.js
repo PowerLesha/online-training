@@ -128,6 +128,7 @@ function NavBar({ changeLanguage }) {
               style={{
                 backgroundColor: "rgb(105, 13, 13)",
                 color: "white",
+                cursor: "pointer",
               }}
             >
               <option value="en" className="languageSelect">
