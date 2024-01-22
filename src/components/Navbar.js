@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -6,7 +6,6 @@ import onlinetraining from "../Assets/Online training for you (1).png";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
 import {
-  AiOutlineFileText,
   AiOutlineFolderOpen,
   AiOutlineHome,
   AiOutlineUser,
@@ -19,20 +18,48 @@ import { useTranslation } from "react-i18next";
 function NavBar({ changeLanguage }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+
+  const menuRef = useRef(null);
   const { t, i18n } = useTranslation();
+
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
     changeLanguage(selectedLanguage);
+    updateExpanded(false);
   };
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        updateExpanded(false);
+      }
+    };
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY >= 20 && currentScrollY > prevScrollY) {
+        // Scrolling down
+        updateNavbar(true);
+        updateExpanded(false); // Close the menu when scrolling down
+      } else {
+        // Scrolling up or not enough scroll
+        updateNavbar(false);
+      }
+
+      // Update prevScrollY for the next comparison
+      setPrevScrollY(currentScrollY);
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -41,7 +68,7 @@ function NavBar({ changeLanguage }) {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container ref={menuRef}>
         <Navbar.Brand
           href="https://powerlesha.github.io/online-training/#/"
           className="d-flex"
@@ -111,7 +138,7 @@ function NavBar({ changeLanguage }) {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <div>
+          <Nav.Item>
             <MdOutlineLanguage
               style={{
                 marginBottom: "2px",
@@ -144,7 +171,7 @@ function NavBar({ changeLanguage }) {
                 Български
               </option>
             </select>
-          </div>
+          </Nav.Item>
         </Navbar.Collapse>
       </Container>
     </Navbar>

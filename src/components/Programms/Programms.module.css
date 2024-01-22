@@ -108,3 +108,45 @@ p {
   cursor: pointer; /* Add a pointer cursor to indicate the button is clickable */
   /* Add other styles as needed */
 }
+.FreePrograms_h3 {
+  position: static;
+  display: inline;
+}
+.FreePrograms_button {
+  position: static;
+  margin-top: 80px;
+  margin-bottom: 65px;
+  border-radius: 20px;
+  display: inline;
+}
+.FreePrograms_p {
+  display: flex;
+  position: static;
+  margin-top: 20px;
+  width: 360px;
+  margin-left: -40px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .FreePrograms_p {
+    width: 340px;
+    margin-left: -40px;
+  }
+  .FreePrograms_button {
+    margin-bottom: 65px;
+  }
+  .option {
+    margin-inline: 5px;
+    padding-inline: -20px;
+  }
+  .btn {
+    width: 110%;
+    height: 110%;
+    margin-inline-start: -5px;
+    margin-inline-end: 6px;
+  }
+  .carousel {
+    max-width: 390px;
+  }
+}

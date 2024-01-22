@@ -631,7 +631,12 @@ button:focus {
 .resume-right {
   padding-left: 80px !important;
 }
-
+@media (max-width: 960px) {
+  .do-flex {
+    width: 75px;
+    margin-left: -30px;
+  }
+}
 @media (max-width: 767px) {
   .resume-left {
     padding-right: 15px !important;

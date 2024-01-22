@@ -20,11 +20,10 @@ function App() {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
-    console.log("Language changed to", language);
   };
 
   // Inside the Home component
-  console.log("Current language:", i18n.language);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);

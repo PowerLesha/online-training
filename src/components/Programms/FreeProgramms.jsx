@@ -18,26 +18,30 @@ function FreePrograms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription")}</p>
+            <p className={style.FreePrograms_p}>
+              {t("freePrograms.programDescription")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription2")}</p>
+            <p className={style.FreePrograms_p}>
+              {t("freePrograms.programDescription2")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -45,13 +49,15 @@ function FreePrograms() {
           {/* Content for the third slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.powerliftingProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription3")}</p>
+            <p className={style.FreePrograms_p}>
+              {t("freePrograms.programDescription3")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -62,26 +68,30 @@ function FreePrograms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.benchPressProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription4")}</p>
+            <p className={style.FreePrograms_p}>
+              {t("freePrograms.programDescription4")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.benchPressProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription5")}</p>
+            <p className={style.FreePrograms_p}>
+              {t("freePrograms.programDescription5")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -89,13 +99,17 @@ function FreePrograms() {
           {/* Content for the third slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "40px", marginTop: "-50px" }}>
+            <h3 className={style.FreePrograms_h3}>
               {t("freePrograms.benchPressProgram")}
             </h3>
-            <Button style={{ marginBottom: "80px", marginTop: "-10px" }}>
+            <Button className={style.FreePrograms_button}>
               {t("freePrograms.getProgram")}
             </Button>
-            <p>{t("freePrograms.programDescription6")}</p>
+            <p className={style.FreePrograms_p}>
+              &nbsp; &nbsp; &nbsp;
+              {t("freePrograms.programDescription6")}
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
