@@ -130,11 +130,11 @@ function NavBar({ changeLanguage }) {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/MyBlog"
+                to="/contact-me"
                 onClick={() => updateExpanded(false)}
                 style={{ marginRight: "25px" }}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> {t("navbar.blog")}
+                <ImBlog style={{ marginBottom: "2px" }} /> {t("navbar.contact")}
               </Nav.Link>
             </Nav.Item>
           </Nav>

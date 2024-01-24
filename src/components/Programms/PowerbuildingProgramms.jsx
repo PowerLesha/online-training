@@ -18,23 +18,23 @@ function FreePrograms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "90px" }}>
-              {t("freePrograms.powerliftingProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.powerliftingProgram")} */}
             </h3>
             <h4 style={{ paddingBottom: "60px" }}>
-              {t("freePrograms.sixWeeksProgram")}
+              {/* {t("freePrograms.sixWeeksProgram")} */}
             </h4>
-            <p>{t("freePrograms.programDescription")}</p>
+            {/* <p>{t("freePrograms.programDescription")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "240px" }}>
-              {t("freePrograms.powerliftingProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.powerliftingProgram")} */}
             </h3>
-            <p>{t("freePrograms.placeholderText")}</p>
+            {/* <p>{t("freePrograms.placeholderText")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -42,10 +42,10 @@ function FreePrograms() {
           {/* Content for the third slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "240px" }}>
-              {t("freePrograms.powerliftingProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.powerliftingProgram")} */}
             </h3>
-            <p>{t("freePrograms.placeholderText")}</p>
+            {/* <p>{t("freePrograms.placeholderText")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -56,20 +56,20 @@ function FreePrograms() {
           {/* Content for the first slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "240px" }}>
-              {t("freePrograms.benchPressProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.benchPressProgram")} */}
             </h3>
-            <p>{t("freePrograms.placeholderText")}</p>
+            {/* <p>{t("freePrograms.placeholderText")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "240px" }}>
-              {t("freePrograms.benchPressProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.benchPressProgram")} */}
             </h3>
-            <p>{t("freePrograms.placeholderText")}</p>
+            {/* <p>{t("freePrograms.placeholderText")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -77,10 +77,10 @@ function FreePrograms() {
           {/* Content for the third slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 style={{ marginBottom: "240px" }}>
-              {t("freePrograms.benchPressProgram")}
+            <h3 className={style.FreePrograms_h3}>
+              {/* {t("freePrograms.benchPressProgram")} */}
             </h3>
-            <p>{t("freePrograms.placeholderText")}</p>
+            {/* <p>{t("freePrograms.placeholderText")}</p> */}
           </Carousel.Caption>
         </Carousel.Item>
 

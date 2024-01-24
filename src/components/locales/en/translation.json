@@ -4,7 +4,7 @@
     "about": "About",
     "services": "Services",
     "programs": "Programs",
-    "blog": "My Blog",
+    "contact": "Contact Me",
     "hi": "Hi There!",
     "I": "I'M",
     "name": "Titov Oleksii"
@@ -65,10 +65,10 @@
     "trainingPlanDescription": "\"I send you monthly training plan as an excel document.\""
   },
   "freePrograms": {
-    "powerliftingProgram": "Free 6 weeks powerlifting program",
+    "powerliftingProgram": "Free 12 weeks powerlifting program",
     "getProgram": "Click here to get this program",
-    "programDescription": "This program is good for both beginners and medium-level athletes (up to 400-420 Wilks).",
-    "programDescription2": "This program is good for both medium-level and high level athletes (up to 450-500 Wilks).",
+    "programDescription": "This program is good for both beginners and medium-level athletes (up to 300-400 Wilks).",
+    "programDescription2": "This program is good for both medium-level and high level athletes (up to 400-500 Wilks).",
     "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
     "benchPressProgram": "Free 6 weeks bench-press program",
     "programDescription4": "This program is good for both beginners and medium-level athletes.",

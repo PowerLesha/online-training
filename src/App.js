@@ -10,9 +10,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyBlog from "./components/MyBlog";
 import Programms from "./components/Programms/Programms";
 import { useTranslation } from "react-i18next";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -42,7 +42,7 @@ function App() {
           <Route path="/" element={<Home changeLanguage={changeLanguage} />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/MyBlog" element={<MyBlog />} />
+          <Route path="/contact-me" element={<ContactMe />} />
           <Route path="/programms" element={<Programms />} />
         </Routes>
         <Footer />

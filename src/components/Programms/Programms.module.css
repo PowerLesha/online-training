@@ -103,14 +103,16 @@ p {
   background-image: url(../../Assets/buyCoffe.png);
   border-radius: 20px;
   background-size: cover; /* or background-size: 100% 100%; */
-
   border: none; /* Remove default button border */
   cursor: pointer; /* Add a pointer cursor to indicate the button is clickable */
   /* Add other styles as needed */
 }
 .FreePrograms_h3 {
+  width: 400px;
+  margin-left: -60px;
+  font-size: 25px;
   position: static;
-  display: inline;
+  display: flex;
 }
 .FreePrograms_button {
   position: static;
@@ -122,19 +124,23 @@ p {
 .FreePrograms_p {
   display: flex;
   position: static;
-  margin-top: 20px;
-  width: 360px;
-  margin-left: -40px;
+  margin-top: 10px;
+  width: 400px;
+  margin-left: -62px;
   justify-content: center;
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
+  .FreePrograms_h3 {
+    margin-left: -75px;
+  }
   .FreePrograms_p {
-    width: 340px;
-    margin-left: -40px;
+    width: 360px;
+    margin-left: -55px;
   }
   .FreePrograms_button {
-    margin-bottom: 65px;
+    margin-top: 70px;
+    margin-bottom: 75px;
   }
   .option {
     margin-inline: 5px;
