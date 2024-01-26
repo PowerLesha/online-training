@@ -6,9 +6,15 @@ import quote from "../../Assets/make.png";
 import quote2 from "../../Assets/your.png";
 import quote3 from "../../Assets/choice.png";
 import { useTranslation } from "react-i18next";
+import { useProjectContext } from "../ProjectContext";
 
 function Projects() {
   const { t } = useTranslation();
+  const { setProject } = useProjectContext();
+
+  const handleSetSelectedProject = (cardName) => {
+    setProject(cardName);
+  };
 
   return (
     <Container fluid className="project-section">
@@ -29,8 +35,10 @@ function Projects() {
                 </p>
               }
               description={t("projects.onlineTrainingDescription")}
-              emailLink="mailto:leshapowerlifter@gmail.com"
-              instaLink="https://www.instagram.com/powerlifter_titov/"
+              link="/contact-me"
+              linkButton={t("projectCards.contactMe")}
+              data={"online-training"}
+              onButtonClick={handleSetSelectedProject}
             />
           </Col>
 
@@ -44,8 +52,10 @@ function Projects() {
                 </p>
               }
               description={t("projects.onlineConsultationDescription")}
-              emailLink="mailto:leshapowerlifter@gmail.com"
-              instaLink="https://www.instagram.com/powerlifter_titov/"
+              link="/contact-me"
+              linkButton={t("projectCards.contactMe")}
+              data={"consultation"}
+              onButtonClick={handleSetSelectedProject}
             />
           </Col>
           <Col md={4}>
@@ -58,8 +68,10 @@ function Projects() {
                 </p>
               }
               description={t("projects.trainingPlanDescription")}
-              emailLink="mailto:leshapowerlifter@gmail.com"
-              instaLink="https://www.instagram.com/powerlifter_titov/"
+              link="/programms"
+              linkButton={t("projectCards.choosePlan")}
+              data={"training plan"}
+              onButtonClick={handleSetSelectedProject}
             />
           </Col>
         </Row>

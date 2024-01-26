@@ -166,9 +166,11 @@ li {
   .error_message {
     font-size: 10px;
   }
+
   .modal {
-    width: 360px;
+    width: 340px;
+    margin-top: 300px;
     margin-left: 25px;
-    margin-top: 200px;
+    z-index: 9999;
   }
 }

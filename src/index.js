@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./18n";
+import { ProjectProvider } from "./components/ProjectContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={<div>...Loading</div>}>
-      <App />
+      <ProjectProvider>
+        <App />
+      </ProjectProvider>
     </Suspense>
   </React.StrictMode>,
   document.getElementById("root")

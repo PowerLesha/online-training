@@ -51,8 +51,8 @@
     "diverseGoals": "Helped people with different goals like losing weight, increasing mobility, increasing muscle mass, etc."
   },
   "projectCards": {
-    "writeEmail": "Write me on my e-mail",
-    "writeInstagram": "Write me on my Instagram"
+    "contactMe": "Contact Me",
+    "choosePlan": "Choose your plan"
   },
   "projects": {
     "availablePackages": "Available packages:",
@@ -61,8 +61,8 @@
     "onlineTrainingDescription": "I send you a training plan and a diet every week. You should make a video your main sets and give me feedback. You can keep in touch with me every day around the clock.",
     "onlineConsultation": "\"1 hour online consultation, or 1 online training. The price is 20$\"",
     "onlineConsultationDescription": "\"You can ask me all what you want in terms of powerlifting, diet, recovery and that kind of things.\"",
-    "trainingPlan": "\"Training plan for 1 month. It costs 50$.\"",
-    "trainingPlanDescription": "\"I send you monthly training plan as an excel document.\""
+    "trainingPlan": "\"Training plan. Prices range from free to $30.\"",
+    "trainingPlanDescription": "\"I send you a training plan as an excel document.\""
   },
   "freePrograms": {
     "powerliftingProgram": "Free 12 weeks powerlifting program",

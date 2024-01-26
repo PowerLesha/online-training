@@ -3,12 +3,16 @@ import emailjs from "@emailjs/browser";
 import style from "./ContactForm.module.css";
 import { Button, Modal } from "react-bootstrap";
 import Pre from "../Pre";
+import { useLocation } from "react-router-dom";
+import { useProjectContext } from "../ProjectContext";
 
 const ContactForm = () => {
+  const { selectedProject, setProject } = useProjectContext();
   const form = useRef();
   const [step, setStep] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
+  console.log(selectedProject);
   // State for form fields
   const [formData, setFormData] = useState({
     first_name: "",
@@ -44,7 +48,9 @@ const ContactForm = () => {
     best_bp: "Best bench is required",
     best_dl: "Best deadlift is required",
   });
-
+  const handleServiceChange = (e) => {
+    setProject(e.target.value);
+  };
   const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -158,6 +164,34 @@ const ContactForm = () => {
           <fieldset className={style.fieldset}>
             <h2 className={style.fsTitle}>Please fill out this information</h2>
             <h3 className={style.fsSubtitle}>This is step 1</h3>
+            <label className={style.fsTitle}>
+              {" "}
+              Service <span className={style.form_name}> *</span>
+            </label>
+            <select
+              type="select"
+              name="service"
+              className={
+                formErrors.first_name
+                  ? `${style.input} ${style.error}`
+                  : style.input
+              }
+              value={selectedProject || ""}
+              onChange={handleServiceChange}
+            >
+              {" "}
+              <option value="" disabled>
+                Select a service
+              </option>
+              <option value="online-training">Online Training</option>
+              <option value="consultation">Consultation</option>
+              <option value="training-plan">Training Plan</option>
+            </select>
+            {formErrors.service && (
+              <span className={style.error_message}>
+                {errorMessages.service}
+              </span>
+            )}
             <label className={style.fsTitle}>
               {" "}
               First Name <span className={style.form_name}> *</span>
@@ -391,6 +425,7 @@ const ContactForm = () => {
           </fieldset>
         )}
       </form>
+
       <Modal className={style.modal} show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Submission Successful</Modal.Title>

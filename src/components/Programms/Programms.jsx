@@ -6,8 +6,10 @@ import FreePrograms from "./FreeProgramms";
 import PowerliftingProgramms from "./PowerliftingProgramms";
 import PowerbuidingProgramms from "./PowerbuildingProgramms";
 import { useTranslation } from "react-i18next";
+import { useProjectContext } from "../ProjectContext";
 
 function Programs() {
+  const { selectedProject, setProject } = useProjectContext();
   const [selectedOption, setSelectedOption] = useState("option1");
   const { t } = useTranslation();
 

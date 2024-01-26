@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsMessenger } from "react-icons/bs";
-import { useTranslation } from "react-i18next";
-
 import s from "../../App.css";
+import { Link } from "react-router-dom";
 
 function ProjectCards(props) {
-  const { t } = useTranslation();
+  const handleButtonClick = () => {
+    props.onButtonClick(props.data);
+  };
 
   return (
     <Card className="project-card-view">
@@ -23,41 +23,17 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-
-        <Button
-          className="buttoncard"
-          variant="primary"
-          href={props.emailLink}
-          target="_blank"
-        >
-          <BsMessenger /> &nbsp;
-          {props.isInsta
-            ? t("projectCards.writeEmail")
-            : t("projectCards.writeInstagram")}
-        </Button>
-        <Button
-          className="buttoncard"
-          variant="primary"
-          href={props.instaLink}
-          target="_blank"
-        >
-          <BsMessenger /> &nbsp;
-          {props.isInsta ? t("projectCards.writeInstagram") : ""}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {!props.isBlog && props.demoLink && (
+        <Link to={props.link}>
           <Button
+            onClick={handleButtonClick}
             className="buttoncard"
             variant="primary"
-            href={props.instaLink}
             target="_blank"
           >
-            <CgWebsite /> &nbsp;
-            {t("projectCards.writeEmail")}
+            <BsMessenger /> &nbsp;
+            {props.linkButton}
           </Button>
-        )}
+        </Link>
       </Card.Body>
     </Card>
   );
