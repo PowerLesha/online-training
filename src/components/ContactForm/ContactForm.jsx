@@ -17,8 +17,11 @@ const ContactForm = () => {
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
   console.log(selectedProject);
+  console.log(selectedProgram);
   // State for form fields
   const [formData, setFormData] = useState({
+    service: selectedProject,
+    programs: selectedProgram,
     first_name: "",
     last_name: "",
     from_email: "",
@@ -31,6 +34,8 @@ const ContactForm = () => {
     message: "",
   });
   const [formErrors, setFormErrors] = useState({
+    service: false,
+    programs: false,
     first_name: false,
     last_name: false,
     from_email: false,
@@ -43,6 +48,8 @@ const ContactForm = () => {
   });
 
   const [errorMessages] = useState({
+    service: "Choose your sevice please",
+    programs: "Choose your program please",
     first_name: "First name is required",
     last_name: "Last name is required",
     from_email: "Email is required",
@@ -52,16 +59,15 @@ const ContactForm = () => {
     best_bp: "Best bench is required",
     best_dl: "Best deadlift is required",
   });
-  const handleServiceChange = (e) => {
-    setProject(e.target.value);
-  };
-  const handleProgramChange = (e) => {
-    setProgram(e.target.value);
-  };
+
   const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);
     const errors = {
+      service: formData.service == null,
+      programs:
+        formData.service === "training plan" && formData.programs === null,
+
       first_name: formData.first_name.trim() === "",
       last_name: formData.last_name.trim() === "",
       from_email: formData.from_email.trim() === "",
@@ -75,7 +81,12 @@ const ContactForm = () => {
     setFormErrors(errors);
     if (Object.values(errors).includes(true)) {
       setLoading(false);
-      if (formErrors.first_name || formErrors.last_name) {
+      if (
+        formErrors.first_name ||
+        formErrors.last_name ||
+        formErrors.service ||
+        formErrors.programs
+      ) {
         setStep(1);
         return;
       }
@@ -101,6 +112,8 @@ const ContactForm = () => {
       setLoading(false);
     }
     setFormData({
+      service: selectedProject,
+      programs: selectedProgram,
       first_name: "",
       last_name: "",
       from_email: "",
@@ -179,12 +192,12 @@ const ContactForm = () => {
               type="select"
               name="service"
               className={
-                formErrors.first_name
+                formErrors.service
                   ? `${style.input} ${style.error}`
                   : style.input
               }
-              value={selectedProject || ""}
-              onChange={handleServiceChange}
+              value={formData.service || ""}
+              onChange={handleChange}
             >
               {" "}
               <option value="" disabled>
@@ -194,12 +207,12 @@ const ContactForm = () => {
               <option value="consultation">Consultation</option>
               <option value="training plan">Training Plan</option>
             </select>
-            {formErrors.programs && (
+            {formErrors.service && (
               <span className={style.error_message}>
-                {errorMessages.programs}
+                {errorMessages.service}
               </span>
             )}
-            {selectedProject === "training plan" && (
+            {formData.service === "training plan" && (
               <>
                 <label className={style.fsTitle}>
                   {" "}
@@ -213,8 +226,8 @@ const ContactForm = () => {
                       ? `${style.input} ${style.error}`
                       : style.input
                   }
-                  value={selectedProgram || ""}
-                  onChange={handleProgramChange}
+                  value={formData.programs || ""}
+                  onChange={handleChange}
                 >
                   {" "}
                   <option value="" disabled>
@@ -228,9 +241,9 @@ const ContactForm = () => {
                   </option>
                   <option value="training-plan">Training Plan</option>
                 </select>
-                {formErrors.service && (
+                {formErrors.programs && (
                   <span className={style.error_message}>
-                    {errorMessages.program}
+                    {errorMessages.programs}
                   </span>
                 )}
               </>
