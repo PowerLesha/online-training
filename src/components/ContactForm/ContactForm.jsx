@@ -5,9 +5,13 @@ import { Button, Modal } from "react-bootstrap";
 import Pre from "../Pre";
 import { useLocation } from "react-router-dom";
 import { useProjectContext } from "../ProjectContext";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
-  const { selectedProject, setProject } = useProjectContext();
+  const { t } = useTranslation();
+  const { selectedProject, setProject, selectedProgram, setProgram } =
+    useProjectContext();
   const form = useRef();
   const [step, setStep] = useState(1);
   const [showModal, setShowModal] = useState(false);
@@ -50,6 +54,9 @@ const ContactForm = () => {
   });
   const handleServiceChange = (e) => {
     setProject(e.target.value);
+  };
+  const handleProgramChange = (e) => {
+    setProgram(e.target.value);
   };
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -185,12 +192,48 @@ const ContactForm = () => {
               </option>
               <option value="online-training">Online Training</option>
               <option value="consultation">Consultation</option>
-              <option value="training-plan">Training Plan</option>
+              <option value="training plan">Training Plan</option>
             </select>
-            {formErrors.service && (
+            {formErrors.programs && (
               <span className={style.error_message}>
-                {errorMessages.service}
+                {errorMessages.programs}
               </span>
+            )}
+            {selectedProject === "training plan" && (
+              <>
+                <label className={style.fsTitle}>
+                  {" "}
+                  Programs <span className={style.form_name}> *</span>
+                </label>
+                <select
+                  type="select"
+                  name="programs"
+                  className={
+                    formErrors.programs
+                      ? `${style.input} ${style.error}`
+                      : style.input
+                  }
+                  value={selectedProgram || ""}
+                  onChange={handleProgramChange}
+                >
+                  {" "}
+                  <option value="" disabled>
+                    Select a program
+                  </option>
+                  <option value={t("freePrograms.powerliftingProgram")}>
+                    {t("freePrograms.powerliftingProgram")}
+                  </option>
+                  <option value={t("freePrograms.benchPressProgram")}>
+                    {t("freePrograms.benchPressProgram")}
+                  </option>
+                  <option value="training-plan">Training Plan</option>
+                </select>
+                {formErrors.service && (
+                  <span className={style.error_message}>
+                    {errorMessages.program}
+                  </span>
+                )}
+              </>
             )}
             <label className={style.fsTitle}>
               {" "}

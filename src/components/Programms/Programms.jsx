@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import style from "./Programms.module.css";
 import FreePrograms from "./FreeProgramms";
@@ -9,10 +9,14 @@ import { useTranslation } from "react-i18next";
 import { useProjectContext } from "../ProjectContext";
 
 function Programs() {
-  const { selectedProject, setProject } = useProjectContext();
+  const { selectedProject, setProject, selectedProgram, setProgram } =
+    useProjectContext();
   const [selectedOption, setSelectedOption] = useState("option1");
   const { t } = useTranslation();
-
+  const handleSetSelectedProject = (program) => {
+    setProgram(program);
+    setProject("training plan");
+  };
   const handleOptionChange = (value) => {
     setSelectedOption(value);
   };
@@ -74,7 +78,9 @@ function Programs() {
             </div>
           </div>
         </Row>
-        {selectedOption === "option1" && <FreePrograms />}
+        {selectedOption === "option1" && (
+          <FreePrograms onButtonClick={handleSetSelectedProject} />
+        )}
         {selectedOption === "option2" && <PowerliftingProgramms />}
         {selectedOption === "option3" && <PowerbuidingProgramms />}
 
