@@ -9,17 +9,17 @@ function FreePrograms(props) {
   const { t } = useTranslation();
   const { selectedProject, setProject, selectedProgram, setProgram } =
     useProjectContext();
-  // const handleButtonClick = (selectedProgram) => {
-  //   props.onButtonClick(selectedProgram);
+  const handleButtonClick = (selectedProgram) => {
+    props.onButtonClick(selectedProgram);
+  };
+  // const handlePowerClick = () => {
+  //   setProject("training plan");
+  //   setProgram(t("freePrograms.powerliftingProgram"));
   // };
-  const handlePowerClick = () => {
-    setProject("training plan");
-    setProgram(t("freePrograms.powerliftingProgram"));
-  };
-  const handleBenchClick = () => {
-    setProject("training plan");
-    setProgram(t("freePrograms.benchPressProgram"));
-  };
+  // const handleBenchClick = () => {
+  //   setProject("training plan");
+  //   setProgram(t("freePrograms.benchPressProgram"));
+  // };
   return (
     <Row
       md={3}
@@ -38,7 +38,9 @@ function FreePrograms(props) {
             <Link to="/contact-me">
               <Button
                 className={style.FreePrograms_button}
-                onClick={handlePowerClick}
+                onClick={() =>
+                  handleButtonClick(t("freePrograms.powerliftingProgram"))
+                }
               >
                 {t("freePrograms.getProgram")}
               </Button>
@@ -58,7 +60,9 @@ function FreePrograms(props) {
             <Link to="/contact-me">
               <Button
                 className={style.FreePrograms_button}
-                onClick={handleBenchClick}
+                onClick={() =>
+                  handleButtonClick(t("freePrograms.benchPressProgram"))
+                }
               >
                 {t("freePrograms.getProgram")}
               </Button>

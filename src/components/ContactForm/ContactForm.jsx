@@ -1,11 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import style from "./ContactForm.module.css";
 import { Button, Modal } from "react-bootstrap";
 import Pre from "../Pre";
-import { useLocation } from "react-router-dom";
 import { useProjectContext } from "../ProjectContext";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
@@ -16,8 +14,7 @@ const ContactForm = () => {
   const [step, setStep] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
-  console.log(selectedProject);
-  console.log(selectedProgram);
+
   // State for form fields
   const [formData, setFormData] = useState({
     service: selectedProject,
@@ -59,43 +56,60 @@ const ContactForm = () => {
     best_bp: "Best bench is required",
     best_dl: "Best deadlift is required",
   });
+  const errors = {
+    service: formData.service == null,
+    programs:
+      formData.service === "training plan" && formData.programs === null,
 
+    first_name: formData.first_name.trim() === "",
+    last_name: formData.last_name.trim() === "",
+    from_email: formData.from_email.trim() === "",
+    phone: formData.phone.trim() === "",
+    body_weight: formData.body_weight.trim() === "",
+    best_sq: formData.best_sq.trim() === "",
+    best_bp: formData.best_bp.trim() === "",
+    best_dl: formData.best_dl.trim() === "",
+  };
+  // useEffect(() => {
+  //   switch (true) {
+  //     case formErrors.first_name ||
+  //       formErrors.last_name ||
+  //       formErrors.service ||
+  //       formErrors.programs:
+  //       setStep(1);
+  //       break;
+  //     case formErrors.phone || formErrors.from_email:
+  //       setStep(2);
+  //       break;
+  //     case formErrors.body_weight ||
+  //       formErrors.best_sq ||
+  //       formErrors.best_bp ||
+  //       formErrors.best_dl:
+  //       setStep(3);
+
+  //     default:
+  //   }
+  // }, [formErrors]);
   const sendEmail = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    const errors = {
-      service: formData.service == null,
-      programs:
-        formData.service === "training plan" && formData.programs === null,
-
-      first_name: formData.first_name.trim() === "",
-      last_name: formData.last_name.trim() === "",
-      from_email: formData.from_email.trim() === "",
-      phone: formData.phone.trim() === "",
-      body_weight: formData.body_weight.trim() === "",
-      best_sq: formData.best_sq.trim() === "",
-      best_bp: formData.best_bp.trim() === "",
-      best_dl: formData.best_dl.trim() === "",
-    };
 
     setFormErrors(errors);
-    if (Object.values(errors).includes(true)) {
-      setLoading(false);
+    if (Object.values(errors).some((error) => error)) {
       if (
-        formErrors.first_name ||
-        formErrors.last_name ||
-        formErrors.service ||
-        formErrors.programs
+        errors.first_name ||
+        errors.last_name ||
+        errors.service ||
+        errors.programs
       ) {
         setStep(1);
-        return;
-      }
-      if (formErrors.phone || formErrors.from_email) {
+      } else if (errors.phone || errors.from_email) {
         setStep(2);
-        return;
-      } else setStep(3);
+      } else {
+        setStep(3);
+      }
       return;
     }
+    setLoading(true);
     try {
       await emailjs.send(
         "service_kj8pd1c",
