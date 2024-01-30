@@ -207,19 +207,25 @@ const ContactForm = () => {
               name="service"
               className={
                 formErrors.service
-                  ? `${style.input} ${style.error}`
-                  : style.input
+                  ? `${style.input_select} ${style.error}`
+                  : style.input_select
               }
               value={formData.service || ""}
               onChange={handleChange}
             >
               {" "}
-              <option value="" disabled>
+              <option className={style.dropdown_item} value="" disabled>
                 Select a service
               </option>
-              <option value="online-training">Online Training</option>
-              <option value="consultation">Consultation</option>
-              <option value="training plan">Training Plan</option>
+              <option className={style.dropdown_item} value="online-training">
+                Online Training
+              </option>
+              <option className={style.dropdown_item} value="consultation">
+                Consultation
+              </option>
+              <option className={style.dropdown_item} value="training plan">
+                Training Plan
+              </option>
             </select>
             {formErrors.service && (
               <span className={style.error_message}>
@@ -237,14 +243,14 @@ const ContactForm = () => {
                   name="programs"
                   className={
                     formErrors.programs
-                      ? `${style.input} ${style.error}`
-                      : style.input
+                      ? `${style.input_select} ${style.error}`
+                      : style.input_select
                   }
                   value={formData.programs || ""}
                   onChange={handleChange}
                 >
                   {" "}
-                  <option value="" disabled>
+                  <option className={style.dropdown_item} value="" disabled>
                     Select a program
                   </option>
                   <option value={t("freePrograms.powerliftingProgram")}>
