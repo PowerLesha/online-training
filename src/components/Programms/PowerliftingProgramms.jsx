@@ -1,11 +1,17 @@
 import React from "react";
-import { Carousel, Row } from "react-bootstrap";
+import { Button, Carousel, Row } from "react-bootstrap";
 import style from "./Programms.module.css";
 import { useTranslation } from "react-i18next";
+import { useProjectContext } from "../ProjectContext";
+import { Link } from "react-router-dom";
 
-function FreePrograms() {
+function FreePrograms(props) {
   const { t } = useTranslation();
-
+  const { selectedProject, setProject, selectedProgram, setProgram } =
+    useProjectContext();
+  const handleButtonClick = (selectedProgram) => {
+    props.onButtonClick(selectedProgram);
+  };
   return (
     <Row
       md={3}
@@ -15,72 +21,65 @@ function FreePrograms() {
     >
       <Carousel interval={null} className={style.carousel}>
         <Carousel.Item className={style.carouselItem}>
-          {/* Content for the first slide */}
+          {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.powerliftingProgram")} */}
+            <h3
+              className={style.PowerPrograms_h3}
+              style={{ marginBottom: "50px" }}
+            >
+              {t("powerliftingPrograms.powerliftingProgram")}
             </h3>
-            <h4 style={{ paddingBottom: "60px" }}>
-              {/* {t("freePrograms.sixWeeksProgram")} */}
-            </h4>
-            {/* <p>{t("freePrograms.programDescription")}</p> */}
+            <Link to="/contact-me">
+              <Button
+                className={style.PowerPrograms_button}
+                style={{ marginBottom: "0px", marginTop: "0px" }}
+                onClick={() =>
+                  handleButtonClick(
+                    t("powerliftingPrograms.powerliftingProgram")
+                  )
+                }
+              >
+                {t("powerliftingPrograms.getProgram")}
+              </Button>
+            </Link>
+            <p
+              className={style.FreePrograms_p}
+              style={{ paddingBottom: "0px", paddingTop: "20px" }}
+            >
+              {t("powerliftingPrograms.programDescription")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={style.carouselItem}>
           {/* Content for the second slide */}
 
           <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.powerliftingProgram")} */}
+            <h3
+              className={style.PowerPrograms_h3}
+              style={{ marginBottom: "15px" }}
+            >
+              {t("powerliftingPrograms.powerliftingProgram2")}
             </h3>
-            {/* <p>{t("freePrograms.placeholderText")}</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the third slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.powerliftingProgram")} */}
-            </h3>
-            {/* <p>{t("freePrograms.placeholderText")}</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        {/* Add more Carousel.Items for additional slides */}
-      </Carousel>
-      <Carousel interval={null} className={style.carousel}>
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the first slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.benchPressProgram")} */}
-            </h3>
-            {/* <p>{t("freePrograms.placeholderText")}</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the second slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.benchPressProgram")} */}
-            </h3>
-            {/* <p>{t("freePrograms.placeholderText")}</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item className={style.carouselItem}>
-          {/* Content for the third slide */}
-
-          <Carousel.Caption className={style.carouselCaption}>
-            <h3 className={style.FreePrograms_h3}>
-              {/* {t("freePrograms.benchPressProgram")} */}
-            </h3>
-            {/* <p>{t("freePrograms.placeholderText")}</p> */}
+            <Link to="/contact-me">
+              <Button
+                className={style.PowerPrograms_button}
+                style={{ marginBottom: "0px", marginTop: "10px" }}
+                onClick={() =>
+                  handleButtonClick(
+                    t("powerliftingPrograms.powerliftingProgram2")
+                  )
+                }
+              >
+                {t("powerliftingPrograms.getProgram")}
+              </Button>
+            </Link>
+            <p
+              className={style.FreePrograms_p}
+              style={{ paddingBottom: "0px", paddingTop: "20px" }}
+            >
+              {t("powerliftingPrograms.programDescription")}
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 

@@ -15,7 +15,7 @@ function Programs() {
   const { t } = useTranslation();
   const handleSetSelectedProject = (program) => {
     setProgram(program);
-    setProject("training plan");
+    setProject(t("services.trainingPlan"));
   };
   const handleOptionChange = (value) => {
     setSelectedOption(value);
@@ -81,8 +81,12 @@ function Programs() {
         {selectedOption === "option1" && (
           <FreePrograms onButtonClick={handleSetSelectedProject} />
         )}
-        {selectedOption === "option2" && <PowerliftingProgramms />}
-        {selectedOption === "option3" && <PowerbuidingProgramms />}
+        {selectedOption === "option2" && (
+          <PowerliftingProgramms onButtonClick={handleSetSelectedProject} />
+        )}
+        {selectedOption === "option3" && (
+          <PowerbuidingProgramms onButtonClick={handleSetSelectedProject} />
+        )}
 
         <div className={style.donation}>
           <h2>

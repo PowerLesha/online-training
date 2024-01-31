@@ -46,7 +46,7 @@ function FreePrograms(props) {
               </Button>
             </Link>
             <p className={style.FreePrograms_p}>
-              {t("freePrograms.programDescription2")}
+              {t("freePrograms.programDescription")}
             </p>
           </Carousel.Caption>
         </Carousel.Item>

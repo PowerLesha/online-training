@@ -129,8 +129,13 @@ p {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 @media (max-width: 767px) {
+  .PowerPrograms_h3 {
+    width: 250px;
+  }
   .FreePrograms_h3 {
+    width: 390px;
     margin-left: -75px;
   }
   .FreePrograms_p {
@@ -140,6 +145,9 @@ p {
   .FreePrograms_button {
     margin-top: 70px;
     margin-bottom: 75px;
+  }
+  .PowerPrograms_button {
+    margin-top: 50px;
   }
   .option {
     margin-inline: 5px;

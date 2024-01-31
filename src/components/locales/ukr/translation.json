@@ -74,6 +74,23 @@
     "programDescription5": "Ця програма підходить як для атлетів середнього рівня, так і для атлетів високого рівня (+МС-МСМК).",
     "programDescription6": "Ця програма підходить  для атлетів високого рівня (МСМК+)."
   },
+  "powerliftingPrograms": {
+    "powerliftingProgram": "Для початківців (до КМС). Ціна 20 $",
+    "powerliftingProgram2": "Для середнього та високого рівня (від КМС). Ціна 30 $",
+    "getProgram": "Натисніть тут, щоб отримати цю програму",
+    "programDescription": "Я надсилаю вам план тренувань на 1 місяць. Ви даєте мені зворотний зв'язок через 1 місяць і на цій підставі я надсилаю вам план наступного місяця. Також ви можете залишатися на зв'язку зі мною, якщо вам потрібно внести зміни до вашої поточної програми.",
+
+    "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
+    "benchPressProgram": "Free 6 weeks bench-press program",
+    "programDescription4": "This program is good for both beginners and medium-level athletes.",
+    "programDescription5": "This program is good for both medium-level and high level athletes.",
+    "programDescription6": "This program is good for elite level athletes."
+  },
+  "services": {
+    "onlineTraining": "Онлайн-супровід",
+    "consultation": "Консультація",
+    "trainingPlan": "План тренувань"
+  },
   "programs": {
     "freePrograms": "Безкоштовні програми",
     "powerliftingPrograms": "Програми з пауерліфтингу",

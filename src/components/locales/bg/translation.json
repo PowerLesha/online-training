@@ -66,7 +66,7 @@
   "freePrograms": {
     "powerliftingProgram": "Безплатна 12-седмична програма по пауърлифтинг",
     "getProgram": "Щракнете тук, за да получите тази програма",
-    "programDescription": "Тази програма е подходяща както за начинаещи, така и за спортисти със средно ниво на умение (300-400 Wilks).",
+    "programDescription": "Тази програма е подходяща както за начинаещи, така и за спортисти със средно ниво на умение (300-420 Wilks).",
     "programDescription2": "Тази програма е добра както за спортисти на средно, така и на високо ниво (до 400-500 Wilks).",
     "programDescription3": "Тази програма е добра за спортисти от елитно ниво (от 500+ Wilks).",
     "benchPressProgram": "Безплатна 6-седмична програма за бенч прес",
@@ -74,6 +74,25 @@
     "programDescription5": "Тази програма е добра както за спортисти на средно, така и на високо ниво.",
     "programDescription6": "Тази програма е добра за спортисти от елитно ниво."
   },
+  "powerliftingPrograms": {
+    "powerliftingProgram": "За начинаещи (до 350 Wilks). Цената е 20$.",
+    "powerliftingProgram2": " За спортисти от средно и високо ниво (от 350 Wilks). Цената е 30$.",
+
+    "getProgram": "Щракнете тук, за да получите тази програма",
+    "programDescription": "Изпращам ви тренировъчен план за 1 месец. Давате ми обратна връзка след 1 месец и на базата на нея ви изпращам план за следващия месец. Също така можете да поддържате връзка с мен, ако трябва да направите промени в текущата си програма.",
+
+    "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
+    "benchPressProgram": "Free 6 weeks bench-press program",
+    "programDescription4": "This program is good for both beginners and medium-level athletes.",
+    "programDescription5": "This program is good for both medium-level and high level athletes.",
+    "programDescription6": "This program is good for elite level athletes."
+  },
+  "services": {
+    "onlineTraining": "Онлайн обучение",
+    "consultation": "Консултация",
+    "trainingPlan": "План за обучение"
+  },
+
   "programs": {
     "freePrograms": "Безплатни програми",
     "powerliftingPrograms": "Програми по пауърлифтинг",

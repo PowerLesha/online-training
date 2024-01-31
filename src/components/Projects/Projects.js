@@ -37,7 +37,7 @@ function Projects() {
               description={t("projects.onlineTrainingDescription")}
               link="/contact-me"
               linkButton={t("projectCards.contactMe")}
-              data={"online-training"}
+              data={t("services.onlineTraining")}
               onButtonClick={handleSetSelectedProject}
             />
           </Col>
@@ -54,7 +54,7 @@ function Projects() {
               description={t("projects.onlineConsultationDescription")}
               link="/contact-me"
               linkButton={t("projectCards.contactMe")}
-              data={"consultation"}
+              data={t("services.consultation")}
               onButtonClick={handleSetSelectedProject}
             />
           </Col>
@@ -70,7 +70,7 @@ function Projects() {
               description={t("projects.trainingPlanDescription")}
               link="/programms"
               linkButton={t("projectCards.choosePlan")}
-              data={"training plan"}
+              data={t("services.trainingPlan")}
               onButtonClick={handleSetSelectedProject}
             />
           </Col>

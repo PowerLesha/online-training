@@ -47,6 +47,7 @@ li {
   display: none;
 }
 .input_select {
+  cursor: pointer;
   padding: 15px;
   border: 1.5px solid #ccc;
   border-radius: 3px;
@@ -70,12 +71,15 @@ li {
   border-color: rgba(143, 58, 162, 0.459);
   outline: none;
 }
-
+.input_select.error {
+  border-color: red;
+}
 .dropdown_item {
   display: block;
   width: 100%;
   padding: 12px;
 }
+
 .input_select:focus,
 .dropdown_item:hover {
   color: #000000;

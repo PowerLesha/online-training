@@ -59,7 +59,8 @@ const ContactForm = () => {
   const errors = {
     service: formData.service == null,
     programs:
-      formData.service === "training plan" && formData.programs === null,
+      formData.service === t("services.trainingPlan") &&
+      formData.programs === null,
 
     first_name: formData.first_name.trim() === "",
     last_name: formData.last_name.trim() === "",
@@ -217,14 +218,23 @@ const ContactForm = () => {
               <option className={style.dropdown_item} value="" disabled>
                 Select a service
               </option>
-              <option className={style.dropdown_item} value="online-training">
-                Online Training
+              <option
+                className={style.dropdown_item}
+                value={t("services.onlineTraining")}
+              >
+                {t("services.onlineTraining")}
               </option>
-              <option className={style.dropdown_item} value="consultation">
-                Consultation
+              <option
+                className={style.dropdown_item}
+                value={t("services.consultation")}
+              >
+                {t("services.consultation")}
               </option>
-              <option className={style.dropdown_item} value="training plan">
-                Training Plan
+              <option
+                className={style.dropdown_item}
+                value={t("services.trainingPlan")}
+              >
+                {t("services.trainingPlan")}
               </option>
             </select>
             {formErrors.service && (
@@ -232,7 +242,7 @@ const ContactForm = () => {
                 {errorMessages.service}
               </span>
             )}
-            {formData.service === "training plan" && (
+            {formData.service === t("services.trainingPlan") && (
               <>
                 <label className={style.fsTitle}>
                   {" "}
@@ -259,7 +269,16 @@ const ContactForm = () => {
                   <option value={t("freePrograms.benchPressProgram")}>
                     {t("freePrograms.benchPressProgram")}
                   </option>
-                  <option value="training-plan">Training Plan</option>
+                  <option value={t("powerliftingPrograms.powerliftingProgram")}>
+                    {" "}
+                    {t("powerliftingPrograms.powerliftingProgram")}
+                  </option>
+                  <option
+                    value={t("powerliftingPrograms.powerliftingProgram2")}
+                  >
+                    {" "}
+                    {t("powerliftingPrograms.powerliftingProgram2")}
+                  </option>
                 </select>
                 {formErrors.programs && (
                   <span className={style.error_message}>
