@@ -3,7 +3,6 @@
 .carouselItem {
   max-width: 600px;
   height: 450px;
-
   border-radius: 40px; /* Optional: Add border-radius for rounded corners */
 }
 .carousel {
@@ -53,7 +52,6 @@
 .input {
   width: 100%;
   height: 100%;
-
   position: absolute;
   left: 0;
   top: 0;
@@ -66,7 +64,6 @@
   height: 100%;
   background-color: var(--bg-color);
   margin-top: 5px;
-
   border-radius: 50px;
   display: flex;
   justify-content: center;

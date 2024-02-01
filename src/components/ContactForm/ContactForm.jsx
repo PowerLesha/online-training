@@ -44,18 +44,34 @@ const ContactForm = () => {
     best_dl: false,
   });
 
-  const [errorMessages] = useState({
-    service: "Choose your sevice please",
-    programs: "Choose your program please",
-    first_name: "First name is required",
-    last_name: "Last name is required",
-    from_email: "Email is required",
-    phone: "Phone is required",
-    body_weight: "Body weight is required",
-    best_sq: "Best squat is required",
-    best_bp: "Best bench is required",
-    best_dl: "Best deadlift is required",
+  const [errorMessages, setErrorMessages] = useState({
+    service: t("errors.service"),
+    programs: t("errors.program"),
+    first_name: t("errors.name"),
+    last_name: t("errors.surname"),
+    from_email: t("errors.email"),
+    phone: t("errors.phone"),
+    body_weight: t("errors.bodyWeight"),
+    best_sq: t("errors.bestSq"),
+    best_bp: t("errors.bestBp"),
+    best_dl: t("errors.bestDl"),
   });
+
+  useEffect(() => {
+    // Update error messages when language changes
+    setErrorMessages({
+      service: t("errors.service"),
+      programs: t("errors.program"),
+      first_name: t("errors.name"),
+      last_name: t("errors.surname"),
+      from_email: t("errors.email"),
+      phone: t("errors.phone"),
+      body_weight: t("errors.bodyWeight"),
+      best_sq: t("errors.bestSq"),
+      best_bp: t("errors.bestBp"),
+      best_dl: t("errors.bestDl"),
+    });
+  }, [t]);
   const errors = {
     service: formData.service == null,
     programs:
@@ -71,26 +87,6 @@ const ContactForm = () => {
     best_bp: formData.best_bp.trim() === "",
     best_dl: formData.best_dl.trim() === "",
   };
-  // useEffect(() => {
-  //   switch (true) {
-  //     case formErrors.first_name ||
-  //       formErrors.last_name ||
-  //       formErrors.service ||
-  //       formErrors.programs:
-  //       setStep(1);
-  //       break;
-  //     case formErrors.phone || formErrors.from_email:
-  //       setStep(2);
-  //       break;
-  //     case formErrors.body_weight ||
-  //       formErrors.best_sq ||
-  //       formErrors.best_bp ||
-  //       formErrors.best_dl:
-  //       setStep(3);
-
-  //     default:
-  //   }
-  // }, [formErrors]);
   const sendEmail = async (e) => {
     e.preventDefault();
 
@@ -178,30 +174,31 @@ const ContactForm = () => {
             }
             onClick={() => setStep(1)}
           >
-            Account Setup
+            {t("contactForm.accountSetup")}
           </li>
           <li
             className={step === 2 || step === 3 ? style.active : ""}
             onClick={() => setStep(2)}
           >
-            Social Profiles
+            {t("contactForm.socialProfiles")}
           </li>
           <li
             className={step === 3 ? style.active : ""}
             onClick={() => setStep(3)}
           >
-            Personal Details
+            {t("contactForm.personalDetails")}
           </li>
         </ul>
 
         {/* fieldsets */}
         {step === 1 && (
           <fieldset className={style.fieldset}>
-            <h2 className={style.fsTitle}>Please fill out this information</h2>
-            <h3 className={style.fsSubtitle}>This is step 1</h3>
+            <h2 className={style.fsTitle}> {t("contactForm.header")}</h2>
+            <h3 className={style.fsSubtitle}>{t("contactForm.step1")}</h3>
             <label className={style.fsTitle}>
               {" "}
-              Service <span className={style.form_name}> *</span>
+              {t("contactForm.service")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <select
               type="select"
@@ -216,7 +213,7 @@ const ContactForm = () => {
             >
               {" "}
               <option className={style.dropdown_item} value="" disabled>
-                Select a service
+                {t("contactForm.selectService")}
               </option>
               <option
                 className={style.dropdown_item}
@@ -246,7 +243,8 @@ const ContactForm = () => {
               <>
                 <label className={style.fsTitle}>
                   {" "}
-                  Programs <span className={style.form_name}> *</span>
+                  {t("contactForm.programs")}{" "}
+                  <span className={style.form_name}> *</span>
                 </label>
                 <select
                   type="select"
@@ -261,7 +259,7 @@ const ContactForm = () => {
                 >
                   {" "}
                   <option className={style.dropdown_item} value="" disabled>
-                    Select a program
+                    {t("contactForm.selectProgram")}
                   </option>
                   <option value={t("freePrograms.powerliftingProgram")}>
                     {t("freePrograms.powerliftingProgram")}
@@ -289,7 +287,8 @@ const ContactForm = () => {
             )}
             <label className={style.fsTitle}>
               {" "}
-              First Name <span className={style.form_name}> *</span>
+              {t("contactForm.firstName")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -309,7 +308,8 @@ const ContactForm = () => {
             )}
             <label className={style.fsTitle}>
               {" "}
-              Last Name <span className={style.form_name}> *</span>
+              {t("contactForm.lastName")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -335,19 +335,21 @@ const ContactForm = () => {
               onClick={handleNext}
               className={style.button_next}
             >
-              Next
+              {t("contactForm.next")}
             </Button>
           </fieldset>
         )}
 
         {step === 2 && (
           <fieldset className={style.fieldset}>
-            <h2 className={style.fsTitle}>Social Profiles</h2>
-            <h3 className={style.fsSubtitle}>
-              Your presence on the social network
-            </h3>
+            <h2 className={style.fsTitle}>
+              {" "}
+              {t("contactForm.socialProfiles")}
+            </h2>
+            <h3 className={style.fsSubtitle}>{t("contactForm.social")}</h3>
             <label className={style.fsTitle}>
-              Email <span className={style.form_name}> *</span>
+              {t("contactForm.email")}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="email"
@@ -366,7 +368,8 @@ const ContactForm = () => {
               </span>
             )}
             <label className={style.fsTitle}>
-              Phone <span className={style.form_name}> *</span>
+              {t("contactForm.phone")}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -380,7 +383,9 @@ const ContactForm = () => {
             {formErrors.phone && (
               <span className={style.error_message}>{errorMessages.phone}</span>
             )}
-            <label className={style.fsTitle}>Instagram/Telegram</label>
+            <label className={style.fsTitle}>
+              {t("contactForm.instaTele")}
+            </label>
             <input
               type="text"
               name="instagram_telegram"
@@ -397,7 +402,7 @@ const ContactForm = () => {
               className={style.button_next}
             >
               {" "}
-              Previous
+              {t("contactForm.previous")}
             </Button>
             <Button
               type="button"
@@ -407,20 +412,23 @@ const ContactForm = () => {
               className={style.button}
             >
               {" "}
-              Next{" "}
+              {t("contactForm.next")}
             </Button>
           </fieldset>
         )}
 
         {step === 3 && (
           <fieldset className={style.fieldset}>
-            <h2 className={style.fsTitle}>Personal Details</h2>
+            <h2 className={style.fsTitle}>
+              {t("contactForm.personalDetails")}
+            </h2>
             <h3 className={style.fsSubtitle}>
-              Please type your current body weight and results in kg
+              {t("contactForm.personalInfo")}
             </h3>
 
             <label className={style.fsTitle}>
-              Body weight <span className={style.form_name}> *</span>
+              {t("contactForm.bodyWeight")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
 
             <input
@@ -441,7 +449,8 @@ const ContactForm = () => {
             )}
 
             <label className={style.fsTitle}>
-              Best squat <span className={style.form_name}> *</span>
+              {t("contactForm.bestSq")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -460,7 +469,8 @@ const ContactForm = () => {
               </span>
             )}
             <label className={style.fsTitle}>
-              Best bench-press <span className={style.form_name}> *</span>
+              {t("contactForm.bestBench")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -479,7 +489,8 @@ const ContactForm = () => {
               </span>
             )}
             <label className={style.fsTitle}>
-              Best deadlift <span className={style.form_name}> *</span>
+              {t("contactForm.bestDl")}{" "}
+              <span className={style.form_name}> *</span>
             </label>
             <input
               type="text"
@@ -497,7 +508,7 @@ const ContactForm = () => {
                 {errorMessages.best_dl}
               </span>
             )}
-            <label className={style.fsTitle}>Message</label>
+            <label className={style.fsTitle}>{t("contactForm.message")}</label>
             <textarea
               name="message"
               className={style.input}
@@ -512,10 +523,10 @@ const ContactForm = () => {
               className={style.button_next}
             >
               {" "}
-              Previous{" "}
+              {t("contactForm.previous")}
             </Button>
             <Button type="submit" className={style.button}>
-              Submit
+              {t("contactForm.submit")}
             </Button>
           </fieldset>
         )}
@@ -523,14 +534,12 @@ const ContactForm = () => {
 
       <Modal className={style.modal} show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Submission Successful</Modal.Title>
+          <Modal.Title>{t("submition.succes")}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          Thank you for submitting the form. Your information has been received.
-        </Modal.Body>
+        <Modal.Body>{t("submition.message")}</Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleCloseModal}>
-            Close
+            {t("submition.close")}
           </Button>
         </Modal.Footer>
       </Modal>

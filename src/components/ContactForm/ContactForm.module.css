@@ -110,12 +110,16 @@ li {
 }
 
 .button {
+  padding: 0px;
   margin-left: 80px;
+  height: 40px;
   width: 100px;
   border: 2px solid;
   background-color: rgb(118, 24, 24) !important;
 }
 .button_next {
+  padding: 0px;
+  height: 40px;
   width: 100px;
   border: 2px solid;
   background-color: rgb(118, 24, 24) !important;

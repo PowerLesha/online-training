@@ -103,5 +103,48 @@
   },
   "footer": {
     "designedBy": "Designed and Developed by Titov Oleksii"
+  },
+  "contactForm": {
+    "accountSetup": "ACCOUNT SETUP",
+    "socialProfiles": "SOCIAL PROFILES",
+    "personalDetails": "PERSONAL DETAILS",
+    "header": "PLEASE FILL OUT THIS INFORMATION",
+    "step1": "This is step 1",
+    "service": "Service",
+    "selectService": "Select a service",
+    "programs": "Programs",
+    "selectProgram": "Select a program",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "social": "Your presence on the social network",
+    "email": "Email",
+    "phone": "Phone",
+    "instaTele": "Instagram/Telegram",
+    "personalInfo": "Please type your current body weight and results in kg",
+    "bodyWeight": "Body weight",
+    "bestSq": "Best squat",
+    "bestBench": "Best bench-press",
+    "bestDl": "Best deadlift",
+    "message": "Message"
+  },
+  "errors": {
+    "service": "Choose your sevice please",
+    "program": "Choose your program please",
+    "name": "First name is required",
+    "surname": "Last name is required",
+    "email": "Email is required",
+    "phone": "Phone is required",
+    "bodyWeight": "Body weight is required",
+    "bestSq": "Best squat is required",
+    "bestBp": "Best bench is required",
+    "bestDl": "Best deadlift is required"
+  },
+  "submition": {
+    "succes": "Submission Successful",
+    "message": "Thank you for submitting the form. Your information has been received.",
+    "close": "Close"
   }
 }
