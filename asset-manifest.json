@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-training/static/css/main.f9276ece.css",
-    "main.js": "/online-training/static/js/main.5244a413.js",
+    "main.css": "/online-training/static/css/main.2e1312fd.css",
+    "main.js": "/online-training/static/js/main.7d27f683.js",
     "static/js/415.4d6acbeb.chunk.js": "/online-training/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/online-training/static/js/787.1ed0c42c.chunk.js",
     "static/media/deadlift.jpg": "/online-training/static/media/deadlift.08c5149d7902b3f08c14.jpg",
@@ -14,13 +14,13 @@
     "static/media/pre.svg": "/online-training/static/media/pre.141c6d9cb6bbb09bedc6.svg",
     "index.html": "/online-training/index.html",
     "static/media/getFetch.cjs": "/online-training/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.f9276ece.css.map": "/online-training/static/css/main.f9276ece.css.map",
-    "main.5244a413.js.map": "/online-training/static/js/main.5244a413.js.map",
+    "main.2e1312fd.css.map": "/online-training/static/css/main.2e1312fd.css.map",
+    "main.7d27f683.js.map": "/online-training/static/js/main.7d27f683.js.map",
     "415.4d6acbeb.chunk.js.map": "/online-training/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/online-training/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9276ece.css",
-    "static/js/main.5244a413.js"
+    "static/css/main.2e1312fd.css",
+    "static/js/main.7d27f683.js"
   ]
 }
