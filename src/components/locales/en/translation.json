@@ -80,12 +80,17 @@
     "powerliftingProgram2": "For medium and high level athletes (from 350 Wilks). The price is 30$ ",
     "getProgram": "Click here to get this program",
     "programDescription": "I send you a training plan for 1 month. You give me feedback after 1 month and based on it I send you a plan for the next month. Also you can keep in touch with me, if you have to do changes to your current program.",
-
     "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
     "benchPressProgram": "Free 6 weeks bench-press program",
     "programDescription4": "This program is good for both beginners and medium-level athletes.",
     "programDescription5": "This program is good for both medium-level and high level athletes.",
     "programDescription6": "This program is good for elite level athletes."
+  },
+  "powerbuildingPrograms": {
+    "power": "Powerbuilding program",
+    "program1": "For all level athletes. The price is 30$ ",
+    "getProgram": "Click here to get this program",
+    "programDescription": "I send you a training plan for 1 month. You give me feedback after 1 month and based on it I send you a plan for the next month. Also you can keep in touch with me, if you have to do changes to your current program."
   },
   "services": {
     "onlineTraining": "Online-training",

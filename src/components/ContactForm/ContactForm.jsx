@@ -277,6 +277,10 @@ const ContactForm = () => {
                     {" "}
                     {t("powerliftingPrograms.powerliftingProgram2")}
                   </option>
+                  <option value={t("powerbuildingPrograms.power")}>
+                    {" "}
+                    {t("powerbuildingPrograms.power")}
+                  </option>
                 </select>
                 {formErrors.programs && (
                   <span className={style.error_message}>
