@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/online-training/static/css/main.7005d1c7.css",
-    "main.js": "/online-training/static/js/main.accb3d3a.js",
-    "static/js/415.fc063c41.chunk.js": "/online-training/static/js/415.fc063c41.chunk.js",
-    "static/js/787.f6e65957.chunk.js": "/online-training/static/js/787.f6e65957.chunk.js",
+    "main.css": "/online-training/static/css/main.f9276ece.css",
+    "main.js": "/online-training/static/js/main.5244a413.js",
+    "static/js/415.4d6acbeb.chunk.js": "/online-training/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/online-training/static/js/787.1ed0c42c.chunk.js",
     "static/media/deadlift.jpg": "/online-training/static/media/deadlift.08c5149d7902b3f08c14.jpg",
     "static/media/homeLogo.png": "/online-training/static/media/homeLogo.d1f4e621b6167b7dfabf.png",
     "static/media/Online training for you (1).png": "/online-training/static/media/Online training for you (1).577e22e977ee3a721e98.png",
@@ -11,15 +11,16 @@
     "static/media/your.png": "/online-training/static/media/your.72221b50ef81427c1808.png",
     "static/media/make.png": "/online-training/static/media/make.7fea8b87dbbfd4c4761d.png",
     "static/media/choice.png": "/online-training/static/media/choice.cb8a43e7a7f92076c296.png",
-    "static/media/pre.svg": "/online-training/static/media/pre.4410c5baaa673cc131da.svg",
+    "static/media/pre.svg": "/online-training/static/media/pre.141c6d9cb6bbb09bedc6.svg",
     "index.html": "/online-training/index.html",
-    "main.7005d1c7.css.map": "/online-training/static/css/main.7005d1c7.css.map",
-    "main.accb3d3a.js.map": "/online-training/static/js/main.accb3d3a.js.map",
-    "415.fc063c41.chunk.js.map": "/online-training/static/js/415.fc063c41.chunk.js.map",
-    "787.f6e65957.chunk.js.map": "/online-training/static/js/787.f6e65957.chunk.js.map"
+    "static/media/getFetch.cjs": "/online-training/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.f9276ece.css.map": "/online-training/static/css/main.f9276ece.css.map",
+    "main.5244a413.js.map": "/online-training/static/js/main.5244a413.js.map",
+    "415.4d6acbeb.chunk.js.map": "/online-training/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/online-training/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7005d1c7.css",
-    "static/js/main.accb3d3a.js"
+    "static/css/main.f9276ece.css",
+    "static/js/main.5244a413.js"
   ]
 }
