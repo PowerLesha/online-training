@@ -12,14 +12,7 @@ function FreePrograms(props) {
   const handleButtonClick = (selectedProgram) => {
     props.onButtonClick(selectedProgram);
   };
-  // const handlePowerClick = () => {
-  //   setProject("training plan");
-  //   setProgram(t("freePrograms.powerliftingProgram"));
-  // };
-  // const handleBenchClick = () => {
-  //   setProject("training plan");
-  //   setProgram(t("freePrograms.benchPressProgram"));
-  // };
+
   return (
     <Row
       md={3}
