@@ -13,8 +13,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Programms from "./components/Programms/Programms";
 import { useTranslation } from "react-i18next";
 import ContactMe from "./components/ContactMe";
+import ReactGA from "react-ga";
 
 function App() {
+  ReactGA.initialize("G-N5QJFH5HKF");
+  ReactGA.pageview(window.location.pathname + window.location.search);
   const [load, upadateLoad] = useState(true);
   const { t, i18n } = useTranslation();
 
