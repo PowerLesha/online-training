@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-training/static/css/main.e236c560.css",
-    "main.js": "/online-training/static/js/main.7d27f683.js",
+    "main.js": "/online-training/static/js/main.ad7bc49f.js",
     "static/js/415.4d6acbeb.chunk.js": "/online-training/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/online-training/static/js/787.1ed0c42c.chunk.js",
     "static/media/deadlift.jpg": "/online-training/static/media/deadlift.08c5149d7902b3f08c14.jpg",
@@ -15,12 +15,12 @@
     "index.html": "/online-training/index.html",
     "static/media/getFetch.cjs": "/online-training/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.e236c560.css.map": "/online-training/static/css/main.e236c560.css.map",
-    "main.7d27f683.js.map": "/online-training/static/js/main.7d27f683.js.map",
+    "main.ad7bc49f.js.map": "/online-training/static/js/main.ad7bc49f.js.map",
     "415.4d6acbeb.chunk.js.map": "/online-training/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/online-training/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e236c560.css",
-    "static/js/main.7d27f683.js"
+    "static/js/main.ad7bc49f.js"
   ]
 }
