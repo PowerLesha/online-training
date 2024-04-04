@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import face from "../../Assets/face.jpg";
+import deadlift from "../../Assets/deadlift.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -35,12 +36,7 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={face}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "350px" }}
-              />
+              <img src={deadlift} alt="about" className="img-fluid" />
             </Col>
           </Row>
         </Container>

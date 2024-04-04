@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import deadlift from "../../Assets/deadlift.jpg";
+
 import Toolstack from "./Toolstack";
 import { useTranslation } from "react-i18next";
-
+import YouTube from "react-youtube";
 function About() {
   const { t } = useTranslation();
 
@@ -24,7 +23,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            {/* <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               {t("about.intro")}
               <strong className="purple">{t("about.whoAmI")}</strong>
             </h1>
@@ -34,10 +33,11 @@ function About() {
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
-          >
-            <img src={deadlift} alt="about" className="img-fluid" />
+          > */}
+            <YouTube className="video" videoId={"NifSHbREoWk"} />
           </Col>
         </Row>
+
         <h1 className="project-heading">
           <strong className="purple">{t("about.sportsAchievements")}</strong>
         </h1>

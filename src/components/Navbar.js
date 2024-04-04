@@ -26,7 +26,6 @@ function NavBar({ changeLanguage }) {
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
     changeLanguage(selectedLanguage);
-    updateExpanded(false);
   };
 
   useEffect(() => {

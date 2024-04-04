@@ -285,23 +285,23 @@ button:focus {
 }
 
 .main-name {
-  color: #9e6262;
+  color: #b91626 !important;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #93212c !important;
+  color: #b91626 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #f40505 !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
+    font-size: 2em !important;
+    font-weight: 800 !important;
     position: absolute !important;
   }
   .Typewriter__cursor {
@@ -642,7 +642,8 @@ button:focus {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
-
+  .video {
+  }
   .resume-right {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -759,4 +760,14 @@ select option:hover {
 }
 .languageSelect {
   cursor: pointer;
+}
+.video {
+  display: flex;
+  width: 400px;
+  position: relative;
+  background-color: #5f0e1b;
+  margin-left: -25px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  overflow: hidden;
 }
