@@ -771,3 +771,22 @@ select option:hover {
   border-radius: 50px;
   overflow: hidden;
 }
+.my-ach img {
+  border-radius: 20px;
+  height: 500px;
+  width: 430px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .my-ach img {
+    height: 400px;
+    width: 330px;
+  }
+}
+
+@media (min-width: 767px) {
+  .achivments.row {
+    max-width: 800px;
+    margin-left: 220px;
+  }
+}

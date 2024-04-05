@@ -1,12 +1,19 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-
 import Toolstack from "./Toolstack";
 import { useTranslation } from "react-i18next";
-import YouTube from "react-youtube";
+import ach1 from "../../Assets/achivements/ach8.jpg";
+import ach2 from "../../Assets/achivements/ach1.jpg";
+import ach3 from "../../Assets/achivements/ach4.jpg";
+import ach4 from "../../Assets/achivements/ach6.jpg";
+import ach5 from "../../Assets/achivements/ach8.jpg";
+import ach6 from "../../Assets/achivements/ach8.jpg";
+import ch1 from "../../Assets/achivements/coachach4.jpg";
+import ch2 from "../../Assets/achivements/coachach3.jpg";
+import ch3 from "../../Assets/achivements/coachach2.jpg";
+import ch4 from "../../Assets/achivements/coachach1.jpg";
 function About() {
   const { t } = useTranslation();
 
@@ -23,30 +30,81 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            {/* <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              {t("about.intro")}
-              <strong className="purple">{t("about.whoAmI")}</strong>
+            <h1 className="project-heading">
+              <strong className="purple">
+                {t("about.sportsAchievements")}
+              </strong>
             </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          > */}
-            <YouTube className="video" videoId={"NifSHbREoWk"} />
+            <Carousel interval={null} className="">
+              <Carousel.Item className="my-ach">
+                {/* Content for the first slide */}
+                <img src={ach1} />
+                <Carousel.Caption className="">
+                  World championship (IPF) in Sweden
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ach2} />
+                <Carousel.Caption className="">
+                  World club champioship (IPF) in Iran
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ach3} />
+                <Carousel.Caption className="">
+                  National Champioship <br /> (4 gold medals and and 5 National
+                  records)
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ach4} />
+                <Carousel.Caption className=""></Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
 
-        <h1 className="project-heading">
-          <strong className="purple">{t("about.sportsAchievements")}</strong>
-        </h1>
-
         <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">{t("about.coachAchievements")}</strong>
-        </h1>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 className="project-heading">
+              <strong className="purple">{t("about.coachAchievements")}</strong>
+            </h1>
+            <Carousel interval={null} className="">
+              <Carousel.Item className="my-ach">
+                {/* Content for the first slide */}
+                <img src={ch1} />
+                <Carousel.Caption className="">
+                  World championship (IPF) in Sweden
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ch2} />
+                <Carousel.Caption className="">
+                  World club champioship (IPF) in Iran
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ch3} />
+                <Carousel.Caption className="">
+                  National Champioship <br /> (4 gold medals and and 5 National
+                  records)
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="my-ach">
+                <img src={ch4} />
+                <Carousel.Caption className=""></Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+        </Row>
         <Toolstack />
       </Container>
     </Container>

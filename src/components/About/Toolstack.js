@@ -6,7 +6,7 @@ function Toolstack() {
   const { t } = useTranslation();
 
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row className="achivments">
       <Col xs={0} md={0} className="tech-icons">
         <Row />{" "}
         <p className="font">
