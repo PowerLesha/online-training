@@ -11,8 +11,8 @@ function Type() {
         strings: [
           t("type.professionalTrainer"),
           t("type.ipfProfessionalSportsman"),
-          t("type.ipfWorldMedalist"),
-          t("type.multipleNationalChampion"),
+          // t("type.ipfWorldMedalist"),
+          // t("type.multipleNationalChampion"),
         ],
         autoStart: true,
         loop: true,

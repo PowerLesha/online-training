@@ -29,14 +29,16 @@
     "sportsAchievements": "Sports Achievements",
     "coachAchievements": "Achievements as a Coach"
   },
-  "aboutCard": {
-    "greeting": "Hi Everyone! My name is",
-    "name": " Lesha ",
-    "from": "and I'm from",
-    "country": " Ukraine",
-    "professions": "I am both a professional trainer and a professional sportsman in powerlifting.",
-    "quote": "“You can become strong, and powerful, and beautiful.”",
-    "quoteAuthor": "Author Unknown"
+  "achievements": {
+    "achievement1": "World championship (IPF) in Sweden",
+    "achievement2": "World club championship (IPF) in Iran",
+    "achievement3": "National Championship   (4 gold medals and 5 National records)"
+  },
+  "coachAchievements": {
+    "achievement1": "Silver National medalist in powerlifting (2019)",
+    "achievement2": "World champion (IPF) in Lithuania (2021)",
+    "achievement3": "Eurasian cup in bench-press (GPA-IPO) champion (2019)",
+    "achievement4": "Not only powerlifting, but also fitness"
   },
   "techstack": {
     "champion": "Multiple National champion.",

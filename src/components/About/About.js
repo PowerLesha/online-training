@@ -8,8 +8,6 @@ import ach1 from "../../Assets/achivements/ach8.jpg";
 import ach2 from "../../Assets/achivements/ach1.jpg";
 import ach3 from "../../Assets/achivements/ach4.jpg";
 import ach4 from "../../Assets/achivements/ach6.jpg";
-import ach5 from "../../Assets/achivements/ach8.jpg";
-import ach6 from "../../Assets/achivements/ach8.jpg";
 import ch1 from "../../Assets/achivements/coachach4.jpg";
 import ch2 from "../../Assets/achivements/coachach3.jpg";
 import ch3 from "../../Assets/achivements/coachach2.jpg";
@@ -39,21 +37,20 @@ function About() {
               <Carousel.Item className="my-ach">
                 {/* Content for the first slide */}
                 <img src={ach1} />
-                <Carousel.Caption className="">
-                  World championship (IPF) in Sweden
+                <Carousel.Caption className="ach-desc">
+                  {t("achievements.achievement1")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
                 <img src={ach2} />
-                <Carousel.Caption className="">
-                  World club champioship (IPF) in Iran
+                <Carousel.Caption className="ach-desc">
+                  {t("achievements.achievement2")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
                 <img src={ach3} />
-                <Carousel.Caption className="">
-                  National Champioship <br /> (4 gold medals and and 5 National
-                  records)
+                <Carousel.Caption className="ach-desc">
+                  {t("achievements.achievement3")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
@@ -80,27 +77,29 @@ function About() {
             <Carousel interval={null} className="">
               <Carousel.Item className="my-ach">
                 {/* Content for the first slide */}
-                <img src={ch1} />
-                <Carousel.Caption className="">
-                  World championship (IPF) in Sweden
+                <img src={ch4} />
+                <Carousel.Caption className="ach-desc">
+                  {t("coachAchievements.achievement1")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ch2} />
-                <Carousel.Caption className="">
-                  World club champioship (IPF) in Iran
+                <img src={ch1} />
+                <Carousel.Caption className="ach-desc">
+                  {t("coachAchievements.achievement2")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
                 <img src={ch3} />
-                <Carousel.Caption className="">
-                  National Champioship <br /> (4 gold medals and and 5 National
-                  records)
+                <Carousel.Caption className="ach-desc">
+                  {t("coachAchievements.achievement3")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ch4} />
-                <Carousel.Caption className=""></Carousel.Caption>
+                <img src={ch2} />
+                <Carousel.Caption className="ach-desc">
+                  {" "}
+                  {t("coachAchievements.achievement4")}
+                </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </Col>
