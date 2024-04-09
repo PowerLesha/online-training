@@ -771,18 +771,28 @@ select option:hover {
   border-radius: 50px;
   overflow: hidden;
 }
+
+span.carousel-control-next-icon,
+span.carousel-control-prev-icon {
+  width: 60px;
+  height: 60px;
+}
 .my-ach img {
+  border: 2.2px solid rgba(154, 28, 28, 0.883) !important;
+  border-collapse: collapse;
   border-radius: 20px;
   height: 500px;
   width: 430px;
   overflow: hidden;
 }
+
 .ach-desc {
   background-color: rgba(0, 0, 0, 0.5);
   width: 400px;
   margin-left: 58px;
   border-radius: 20px;
 }
+
 @media (max-width: 767px) {
   .my-ach img {
     height: 400px;

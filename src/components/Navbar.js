@@ -12,7 +12,6 @@ import {
 } from "react-icons/ai";
 import { MdOutlineLanguage } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 function NavBar({ changeLanguage }) {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import face from "../../Assets/face.jpg";
 import deadlift from "../../Assets/deadlift.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";

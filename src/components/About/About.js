@@ -33,28 +33,28 @@ function About() {
                 {t("about.sportsAchievements")}
               </strong>
             </h1>
-            <Carousel interval={null} className="">
+            <Carousel interval={null} className="about-carousel">
               <Carousel.Item className="my-ach">
                 {/* Content for the first slide */}
-                <img src={ach1} />
+                <img src={ach1} alt="powerlifter" />
                 <Carousel.Caption className="ach-desc">
                   {t("achievements.achievement1")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ach2} />
+                <img src={ach2} alt="ipf" />
                 <Carousel.Caption className="ach-desc">
                   {t("achievements.achievement2")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ach3} />
+                <img src={ach3} alt="strength" />
                 <Carousel.Caption className="ach-desc">
                   {t("achievements.achievement3")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ach4} />
+                <img src={ach4} alt="champion" />
                 <Carousel.Caption className=""></Carousel.Caption>
               </Carousel.Item>
             </Carousel>
@@ -74,28 +74,28 @@ function About() {
             <h1 className="project-heading">
               <strong className="purple">{t("about.coachAchievements")}</strong>
             </h1>
-            <Carousel interval={null} className="">
+            <Carousel interval={null} className="about-carousel">
               <Carousel.Item className="my-ach">
                 {/* Content for the first slide */}
-                <img src={ch4} />
+                <img src={ch4} alt="trainer" />
                 <Carousel.Caption className="ach-desc">
                   {t("coachAchievements.achievement1")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ch1} />
+                <img src={ch1} alt="coach" />
                 <Carousel.Caption className="ach-desc">
                   {t("coachAchievements.achievement2")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ch3} />
+                <img src={ch3} alt="online-training" />
                 <Carousel.Caption className="ach-desc">
                   {t("coachAchievements.achievement3")}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item className="my-ach">
-                <img src={ch2} />
+                <img src={ch2} alt="powerlifting" />
                 <Carousel.Caption className="ach-desc">
                   {" "}
                   {t("coachAchievements.achievement4")}

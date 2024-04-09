@@ -1,13 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homeLogo.png";
-import Tilt from "react-parallax-tilt";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-import s from "../../App.css";
 
 function Home2() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Container fluid className="home-about-section" id="about">
