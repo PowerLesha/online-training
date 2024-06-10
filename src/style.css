@@ -788,26 +788,20 @@ span.carousel-control-prev-icon {
 
 .ach-desc {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 400px;
-  margin-left: 58px;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px 0 10px;
   border-radius: 20px;
 }
-
+.achivments.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 @media (max-width: 767px) {
   .my-ach img {
     height: 400px;
     width: 330px;
-  }
-  .ach-desc {
-    height: 80px;
-    margin-left: -34px;
-    width: 310px;
-  }
-}
-
-@media (min-width: 767px) {
-  .achivments.row {
-    max-width: 800px;
-    margin-left: 220px;
   }
 }

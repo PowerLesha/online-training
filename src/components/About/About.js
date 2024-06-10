@@ -19,11 +19,21 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row
+          style={{
+            justifyContent: "center",
+            padding: "10px",
+            textAlign: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
           <Col
             md={7}
             style={{
               justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
             }}
