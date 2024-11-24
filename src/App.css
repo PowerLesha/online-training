@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 767px) {
+  .img-fluid {
+    margin-top: 100px;
+  }
+}
+
+.App-header {
+  background-color: #c6071a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ae0f0f;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-fluid {
+  border-radius: 180px;
+}
+
+.sbda {
+  width: 8em;
+  height: 5em;
+  border-radius: 180px;
+}
+
+.font {
+  font-size: 25px;
+  font-style: oblique;
+  color: #c6071a;
+  text-shadow: 2px 2px 2px black;
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.card {
+  color: rgb(113, 102, 113);
+}
+.card p {
+  height: 120px;
+}
+
+.powerlogos {
+  width: min-content;
+  height: 15em;
+}
+.buttoncard {
+  margin-top: 5px;
+}
+
+.project {
+  vertical-align: middle;
+}
+blockquote > :last-child {
+  margin-top: -60px;
+}

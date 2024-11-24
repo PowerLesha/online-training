@@ -1,0 +1,165 @@
+/* Programms.module.css */
+
+.carouselItem {
+  max-width: 600px;
+  height: 450px;
+  border-radius: 40px; /* Optional: Add border-radius for rounded corners */
+}
+.carousel {
+  margin: 20px;
+  max-width: 600px;
+  height: 440px;
+  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  border: 1px solid rgba(145, 77, 161, 0.459);
+  border-radius: 40px; /* Optional: Add border-radius for rounded corners */
+}
+
+.carouselCaption {
+  background: transparent; /* Set a transparent background for captions */
+  max-height: 800px;
+  max-width: 800px;
+}
+.carousel:hover {
+  border: 1px solid rgba(243, 31, 8, 0.459);
+  box-shadow: 0 3px 3px 2px rgba(227, 8, 8, 0.459) !important;
+}
+
+.wrapper {
+  --font-color-dark: #fefefe;
+  --font-color-light: #000000;
+  --bg-color: rgba(227, 8, 8, 0.459);
+  --main-color: rgba(227, 8, 8, 0.459);
+  position: relative;
+  width: 700px;
+  height: 66px;
+  background-color: rgba(145, 77, 161, 0.459);
+  border: 2px solid 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  border-radius: 34px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+}
+
+.option {
+  width: 340px;
+  height: 48px;
+  position: relative;
+  margin-top: 5px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  margin-top: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span {
+  color: var(--font-color-dark);
+}
+
+.input:checked + .btn {
+  background-color: #dcd2d2;
+}
+
+.input:checked + .btn .span {
+  color: var(--font-color-light);
+}
+p {
+  padding-bottom: 20px;
+}
+.donation {
+  position: relative;
+}
+.donation h2 {
+  justify-content: center;
+
+  color: #dcd2d2;
+}
+.donation_button {
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-image: url(../../Assets/buyCoffe.png);
+  border-radius: 20px;
+  background-size: cover; /* or background-size: 100% 100%; */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Add a pointer cursor to indicate the button is clickable */
+  /* Add other styles as needed */
+}
+.FreePrograms_h3 {
+  width: 400px;
+  margin-left: -60px;
+  font-size: 25px;
+  position: static;
+  display: flex;
+}
+.FreePrograms_button {
+  position: static;
+  margin-top: 80px;
+  margin-bottom: 65px;
+  border-radius: 20px;
+}
+.FreePrograms_p {
+  display: flex;
+  position: static;
+  margin-top: 10px;
+  width: 400px;
+  margin-left: -62px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .PowerPrograms_h3 {
+    width: 250px;
+  }
+  .FreePrograms_h3 {
+    width: 390px;
+    margin-left: -75px;
+  }
+  .FreePrograms_p {
+    width: 350px;
+    margin-left: -50px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .FreePrograms_button {
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+  .PowerPrograms_button {
+    margin-top: 50px;
+  }
+  .option {
+    margin-top: 0px;
+    margin-inline: 5px;
+    padding-inline: -20px;
+  }
+  .btn {
+    width: 110%;
+    height: 110%;
+    margin-inline-start: -5px;
+    margin-inline-end: 6px;
+  }
+  .carousel {
+    max-width: 390px;
+  }
+}

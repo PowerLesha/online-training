@@ -1,0 +1,157 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "programs": "Programs",
+    "contact": "Contact Me",
+    "hi": "Hi There!",
+    "I": "I'M",
+    "name": "Titov Oleksii"
+  },
+  "home2": {
+    "introduce": "LET ME INTRODUCE MYSELF",
+    "powerlifting": "I am a top level powerlifter.",
+    "trainer": "I work as a professional trainer as well. And I can help you increase your results either in powerlifting or bench press. Also, I can help you achieve your fitness goals.",
+    "achievements": "So, if you want to be at a higher level than you are, you should work with me.",
+    "findMeOn": "FIND ME ON:"
+  },
+  "type": {
+    "professionalTrainer": "Professional trainer",
+    "ipfProfessionalSportsman": "IPF professional sportsman",
+    "ipfWorldMedalist": "IPF World medalist",
+    "multipleNationalChampion": "Multiple National champion and record holder"
+  },
+
+  "about": {
+    "intro": "Know Who",
+    "whoAmI": " I'M",
+    "sportsAchievements": "Sports Achievements",
+    "coachAchievements": "Achievements as a Coach"
+  },
+  "achievements": {
+    "achievement1": "World championship (IPF) in Sweden",
+    "achievement2": "World club championship (IPF) in Iran",
+    "achievement3": "National Championship   (4 gold medals and 5 National records)"
+  },
+  "coachAchievements": {
+    "achievement1": "Silver National medalist in powerlifting (2019)",
+    "achievement2": "World champion (IPF) in Lithuania (2021)",
+    "achievement3": "Eurasian cup in bench-press (GPA-IPO) champion (2019)",
+    "achievement4": "Not only powerlifting, but also fitness"
+  },
+  "techstack": {
+    "champion": "Multiple National champion.",
+    "recordHolder": "National record holder in squat, deadlift and total.",
+    "clubCupChampion": "IPF World club cup champion (Iran).",
+    "worldEuropeanMedalist": "IPF World, European medalist."
+  },
+  "toolstack": {
+    "trainerExperience": "I have been working as a trainer for more than 10 years.",
+    "medalistsPreparation": "Prepared lots of National and International medalists.",
+    "injuryRecovery": "Helped lots of people recover after injuries.",
+    "diverseGoals": "Helped people with different goals like losing weight, increasing mobility, increasing muscle mass, etc."
+  },
+  "projectCards": {
+    "contactMe": "Contact Me",
+    "choosePlan": "Choose your plan"
+  },
+  "projects": {
+    "availablePackages": "Available packages:",
+    "chooseBestPackage": "Chose the best package for you.",
+    "onlineTraining": "\"Online training in powerlifting/bench-press. Monthly costs 100$.\"",
+    "onlineTrainingDescription": "I send you a training plan and a diet every week. You should make a video your main sets and give me feedback. You can keep in touch with me every day around the clock.",
+    "onlineConsultation": "\"1 hour online consultation, or 1 online training. The price is 20$\"",
+    "onlineConsultationDescription": "\"You can ask me all what you want in terms of powerlifting, diet, recovery and that kind of things.\"",
+    "trainingPlan": "\"Training plan. Prices range from free to $30.\"",
+    "trainingPlanDescription": "\"I send you a training plan as an excel document.\""
+  },
+  "freePrograms": {
+    "powerliftingProgram": "Free 12 weeks powerlifting program",
+    "getProgram": "Click here to get this program",
+    "programDescription": "This program is good for both beginners and medium-level athletes (up to 300-420 Wilks).",
+    "programDescription2": "This program is good for both beginners and medium-level athletes (up to 300-400 Wilks).",
+    "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
+    "benchPressProgram": "Free 6 weeks bench-press program",
+    "programDescription4": "This program is good for both beginners and medium-level athletes.",
+    "programDescription5": "This program is good for both medium-level and high level athletes.",
+    "programDescription6": "This program is good for elite level athletes."
+  },
+  "powerliftingPrograms": {
+    "powerliftingProgram": "For beginers (up to 350 Wilks). The price is 20$ ",
+    "powerliftingProgram2": "For medium and high level athletes (from 350 Wilks). The price is 30$ ",
+    "getProgram": "Click here to get this program",
+    "programDescription": "I send you a training plan for 1 month. You give me feedback after 1 month and based on it I send you a plan for the next month. Also you can keep in touch with me, if you have to do changes to your current program.",
+    "programDescription3": "This program is good for elite level athletes (from 500+ Wilks).",
+    "benchPressProgram": "Free 6 weeks bench-press program",
+    "programDescription4": "This program is good for both beginners and medium-level athletes.",
+    "programDescription5": "This program is good for both medium-level and high level athletes.",
+    "programDescription6": "This program is good for elite level athletes."
+  },
+  "powerbuildingPrograms": {
+    "power": "Powerbuilding program",
+    "program1": "For all level athletes. The price is 30$ ",
+    "getProgram": "Click here to get this program",
+    "programDescription": "I send you a training plan for 1 month. You give me feedback after 1 month and based on it I send you a plan for the next month. Also you can keep in touch with me, if you have to do changes to your current program."
+  },
+  "services": {
+    "onlineTraining": "Online-training",
+    "consultation": "Consultation",
+    "trainingPlan": "Training plan"
+  },
+  "programs": {
+    "freePrograms": "Free Programs",
+    "powerliftingPrograms": "Powerlifting Programs",
+    "powerbuildingPrograms": "Powerbuilding Programs",
+    "supportText": "If these programs are useful to you, you can support me by clicking on this button."
+  },
+  "myBlog": {
+    "noArticles": "Unfortunately, there aren't any articles at the moment. But I promise you, I will write something as soon as possible!"
+  },
+  "footer": {
+    "designedBy": "Designed and Developed by Titov Oleksii"
+  },
+  "contactForm": {
+    "accountSetup": "ACCOUNT SETUP",
+    "socialProfiles": "SOCIAL PROFILES",
+    "personalDetails": "PERSONAL DETAILS",
+    "header": "PLEASE FILL OUT THIS INFORMATION",
+    "step1": "This is step 1",
+    "service": "Service",
+    "selectService": "Select a service",
+    "programs": "Programs",
+    "selectProgram": "Select a program",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "social": "Your presence on the social network",
+    "email": "Email",
+    "phone": "Phone",
+    "instaTele": "Instagram/Telegram",
+    "personalInfo": "Please type your current body weight and results in kg",
+    "bodyWeight": "Body weight",
+    "bestSq": "Best squat",
+    "bestBench": "Best bench-press",
+    "bestDl": "Best deadlift",
+    "message": "Message"
+  },
+  "errors": {
+    "service": "Choose your sevice please",
+    "program": "Choose your program please",
+    "name": "First name is required",
+    "surname": "Last name is required",
+    "email": "Email is required",
+    "phone": "Phone is required",
+    "bodyWeight": "Body weight is required",
+    "bestSq": "Best squat is required",
+    "bestBp": "Best bench is required",
+    "bestDl": "Best deadlift is required"
+  },
+  "submition": {
+    "succes": "Submission Successful",
+    "message": "Thank you for submitting the form. Your information has been received.",
+    "close": "Close"
+  }
+}
